@@ -2,6 +2,8 @@
 
 A whimsical, nature-themed portfolio website showcasing 2D art, game art, animation, and character design work.
 
+*Last updated: 2026-05-02*
+
 ## Features
 
 - **Nature-inspired Design**: Whimsical mushroom, cat, and snail illustrations
