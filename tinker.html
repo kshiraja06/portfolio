@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A pinboard of Kshiraja's little experiments and ideas."
+    />
+    <meta name="theme-color" content="#faf8f3" />
+    <title>Tinker | Kshiraja Ragothaman</title>
+    <script>
+      const savedTheme = localStorage.getItem("kshiraja-theme");
+      if (savedTheme === "light" || savedTheme === "dark") {
+        document.documentElement.dataset.theme = savedTheme;
+      }
+    </script>
+    <link rel="icon" href="assets/star.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Cousine:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="page-loader" role="status" aria-label="Loading portfolio">
+      <img class="loader-star" src="assets/star.svg" alt="" />
+      <span class="loader-name">kshiraja</span>
+      <span class="loader-track"><span></span></span>
+    </div>
+    <div class="night-sky" aria-hidden="true"></div>
+    <div class="custom-cursor" aria-hidden="true"></div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="wordmark" href="index.html" aria-label="Kshiraja, home">
+          <img class="star-mark" src="assets/star.svg" alt="" />
+          <span>kshiraja</span>
+        </a>
+        <p class="header-location">2006 <span>·</span> @ blr, india.</p>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a class="nav-link" href="index.html">work</a>
+          <a class="nav-link is-active" href="tinker.html" aria-current="page">tinker</a>
+          <a class="nav-link" href="about.html">about</a>
+          <span class="nav-indicator" aria-hidden="true"></span>
+        </nav>
+        <button
+          class="theme-toggle"
+          type="button"
+          aria-label="Switch to dark mode"
+          aria-pressed="false"
+        >
+          <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.2 15.1A8.3 8.3 0 0 1 8.9 3.8 8.6 8.6 0 1 0 20.2 15.1Z" />
+          </svg>
+          <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+          </svg>
+        </button>
+      </header>
+
+      <main class="tinker-page">
+        <section class="page-intro reveal" aria-labelledby="tinker-title">
+          <p class="eyebrow">02 / little experiments</p>
+          <h1 id="tinker-title">a place to play.</h1>
+          <p class="page-description">
+            experiments, small ideas, and half-finished things. a collection, still growing.
+          </p>
+        </section>
+
+        <div class="tinker-filters reveal" role="group" aria-label="Filter experiments by medium">
+          <button class="filter-chip is-selected" type="button" data-medium-filter="all" aria-pressed="true">all</button>
+          <button class="filter-chip" type="button" data-medium-filter="code" aria-pressed="false">code</button>
+          <button class="filter-chip" type="button" data-medium-filter="illustration" aria-pressed="false">illustration</button>
+          <button class="filter-chip" type="button" data-medium-filter="ar" aria-pressed="false">ar</button>
+          <button class="filter-chip" type="button" data-medium-filter="figma" aria-pressed="false">figma</button>
+          <button class="filter-chip" type="button" data-medium-filter="film" aria-pressed="false">film</button>
+          <button class="filter-chip" type="button" data-medium-filter="packaging" aria-pressed="false">packaging</button>
+        </div>
+        <div class="status-filters reveal" role="group" aria-label="Filter experiments by status">
+          <span class="filter-group-label">status</span>
+          <button class="filter-chip is-selected" type="button" data-status-filter="all" aria-pressed="true">all</button>
+          <button class="filter-chip" type="button" data-status-filter="finished" aria-pressed="false">finished</button>
+          <button class="filter-chip" type="button" data-status-filter="in progress" aria-pressed="false">in progress</button>
+          <button class="filter-chip" type="button" data-status-filter="prototype" aria-pressed="false">prototype</button>
+          <button class="filter-chip" type="button" data-status-filter="idea" aria-pressed="false">idea</button>
+        </div>
+
+        <section class="pinboard" aria-label="A pinboard of experiments">
+          <article class="tinker-card tile-lilac reveal" data-medium="ar lens-studio" data-status="finished">
+            <p class="tinker-title">burger ar</p><p class="tinker-description">yummy experiments in ar.</p>
+            <div class="tinker-tags"><span>ar</span><span>lens studio</span></div><span class="status-tag">finished</span>
+          </article>
+          <article class="tinker-card tile-peach tile-tall reveal" data-medium="code pygame" data-status="finished">
+            <p class="tinker-title">dog's touch</p><p class="tinker-description">guide a pack of chaotic campus dogs through a baking adventure.</p>
+            <div class="tinker-tags"><span>code</span><span>pygame</span></div><span class="status-tag">finished</span>
+          </article>
+          <article class="tinker-card tile-blue tile-medium reveal" data-medium="code p5.js" data-status="finished">
+            <p class="tinker-title">audio field</p><p class="tinker-description">audio visuals. song in play: nights by frank ocean.</p>
+            <div class="tinker-tags"><span>code</span><span>p5.js</span></div><span class="status-tag">finished</span>
+          </article>
+          <article class="tinker-card tile-olive tile-short reveal" data-medium="code p5.js" data-status="finished">
+            <p class="tinker-title">sequencer</p><p class="tinker-description">a bpm slider schedules the whole sound.</p>
+            <div class="tinker-tags"><span>code</span><span>p5.js</span></div><span class="status-tag">finished</span>
+          </article>
+          <article class="tinker-card tile-lime tile-tall reveal" data-medium="code illustration electron" data-status="finished">
+            <span class="companion-cat" aria-hidden="true">🐈</span>
+            <p class="tinker-title">thought companions</p><p class="tinker-description">little desktop companions for your thoughts, ideas, and tasks.</p>
+            <div class="tinker-tags"><span>code</span><span>illustration</span></div>
+            <span class="status-tag">finished</span>
+            <div class="companion-actions"><button type="button" data-new-task>new task</button><a href="thought-companions.html">view case study</a></div>
+          </article>
+          <article class="tinker-card tile-periwinkle tile-medium reveal" data-medium="code" data-status="in progress">
+            <p class="tinker-title">pxlfy</p><p class="tinker-description">a collection of fun pixel activities. take a picture, play a game.</p>
+            <div class="tinker-tags"><span>code</span></div><span class="status-tag">status to confirm</span>
+          </article>
+          <article class="tinker-card tile-rose tile-short reveal" data-medium="code node tone.js" data-status="finished">
+            <p class="tinker-title">sound orchestra</p><p class="tinker-description">shared-clock sound experiment. more details to come.</p>
+            <div class="tinker-tags"><span>code</span><span>node</span><span>tone.js</span></div><span class="status-tag">finished</span>
+          </article>
+          <article class="tinker-card tile-dark tile-medium reveal" data-medium="code r" data-status="finished">
+            <p class="tinker-title">roommate predictor</p><p class="tinker-description">a compatibility prediction experiment using a dataset we made with google forms.</p>
+            <div class="tinker-tags"><span>code</span><span>r</span></div><span class="status-tag">finished</span>
+          </article>
+          <article class="tinker-card tile-sage tile-short reveal" data-medium="code" data-status="in progress">
+            <p class="tinker-title">kannada science block builder</p><p class="tinker-description">more details to come.</p>
+            <div class="tinker-tags"><span>code</span></div><span class="status-tag">in progress</span>
+          </article>
+          <article class="tinker-card tile-lavender tile-tall reveal" data-medium="illustration" data-status="finished">
+            <p class="tinker-title">concept art</p><p class="tinker-description">more details to come.</p>
+            <div class="tinker-tags"><span>illustration</span></div><span class="status-tag">finished</span>
+          </article>
+          <article class="tinker-card tile-pink tile-medium reveal" data-medium="illustration" data-status="finished">
+            <p class="tinker-title">character design</p><p class="tinker-description">more details to come.</p>
+            <div class="tinker-tags"><span>illustration</span></div><span class="status-tag">finished</span>
+          </article>
+          <article class="tinker-card tile-blue tile-short reveal" data-medium="figma" data-status="prototype">
+            <p class="tinker-title">dibs!</p><p class="tinker-description">a marketplace for hostel groups who are alive at 2am, looking for snacks, resources, and clothes.</p>
+            <div class="tinker-tags"><span>figma</span></div><span class="status-tag">prototype</span>
+          </article>
+          <article class="tinker-card tile-peach tile-medium reveal" data-medium="figma" data-status="idea">
+            <p class="tinker-title">morning widget</p><p class="tinker-description">an idea for a gentler way to start your morning.</p>
+            <div class="tinker-tags"><span>figma</span></div><span class="status-tag">idea</span>
+          </article>
+          <article class="tinker-card tile-lilac tile-short reveal" data-medium="packaging" data-status="finished">
+            <p class="tinker-title">over hrs</p><p class="tinker-description">packaging for a protein bar.</p>
+            <div class="tinker-tags"><span>packaging</span></div><span class="status-tag">finished</span>
+          </article>
+          <article class="tinker-card tile-olive tile-medium reveal" data-medium="film" data-status="finished">
+            <p class="tinker-title">philosophy film</p><p class="tinker-description">a film on whether we all exist for a reason, shot and edited by me &lt;3</p>
+            <div class="tinker-tags"><span>film</span></div><span class="status-tag">finished</span>
+          </article>
+          <article class="tinker-card tile-dark tile-short reveal" data-medium="code" data-status="in progress">
+            <p class="tinker-title">desk cat</p><p class="tinker-description">a program that meows when it notices something on my desk.</p>
+            <div class="tinker-tags"><span>code</span></div><span class="status-tag">in progress · name tbd</span>
+          </article>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <a class="wordmark footer-mark" href="index.html">
+          <img class="star-mark" src="assets/star.svg" alt="" />
+          <span>kshiraja</span>
+        </a>
+        <p>made with curiosity, in bengaluru. <span>© <span data-year></span></span></p>
+        <a class="footer-email" href="mailto:hello@example.com">say hello <span aria-hidden="true">↗</span></a>
+      </footer>
+    </div>
+    <dialog class="task-dialog">
+      <form class="task-form" method="dialog">
+        <button class="dialog-close task-dialog-close" type="button" aria-label="Close new task">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m18 6-12 12M6 6l12 12" /></svg>
+        </button>
+        <p class="eyebrow">a little companion</p>
+        <h2>what's on your mind?</h2>
+        <label for="new-task">a small thing to remember</label>
+        <input id="new-task" name="task" maxlength="160" placeholder="water the tiny plant..." required />
+        <p class="task-storage-note">tasks are saved in your browser only.</p>
+        <button class="task-submit" type="submit">save a task</button>
+        <ul class="task-list" aria-live="polite"></ul>
+      </form>
+    </dialog>
+  </body>
+</html>

@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A little about Kshiraja Ragothaman, a designer who loves to play."
+    />
+    <meta name="theme-color" content="#faf8f3" />
+    <title>About | Kshiraja Ragothaman</title>
+    <script>
+      const savedTheme = localStorage.getItem("kshiraja-theme");
+      if (savedTheme === "light" || savedTheme === "dark") {
+        document.documentElement.dataset.theme = savedTheme;
+      }
+    </script>
+    <link rel="icon" href="assets/star.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Cousine:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="page-loader" role="status" aria-label="Loading portfolio">
+      <img class="loader-star" src="assets/star.svg" alt="" />
+      <span class="loader-name">kshiraja</span>
+      <span class="loader-track"><span></span></span>
+    </div>
+    <div class="night-sky" aria-hidden="true"></div>
+    <div class="custom-cursor" aria-hidden="true"></div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="wordmark" href="index.html" aria-label="Kshiraja, home">
+          <img class="star-mark" src="assets/star.svg" alt="" />
+          <span>kshiraja</span>
+        </a>
+        <p class="header-location">2006 <span>·</span> @ blr, india.</p>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a class="nav-link" href="index.html">work</a>
+          <a class="nav-link" href="tinker.html">tinker</a>
+          <a class="nav-link is-active" href="about.html" aria-current="page">about</a>
+          <span class="nav-indicator" aria-hidden="true"></span>
+        </nav>
+        <button
+          class="theme-toggle"
+          type="button"
+          aria-label="Switch to dark mode"
+          aria-pressed="false"
+        >
+          <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.2 15.1A8.3 8.3 0 0 1 8.9 3.8 8.6 8.6 0 1 0 20.2 15.1Z" />
+          </svg>
+          <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+          </svg>
+        </button>
+      </header>
+
+      <main class="about-page">
+        <aside class="about-sidebar">
+          <p class="eyebrow">a little more</p>
+          <nav class="about-nav" aria-label="About sections">
+            <a class="about-nav-link is-current" href="#hi">hi!</a>
+            <a class="about-nav-link" href="#experience">experience</a>
+            <a class="about-nav-link" href="#community">community</a>
+            <a class="about-nav-link" href="#philosophy">philosophy</a>
+            <a class="about-nav-link" href="#shelf">shelf</a>
+            <a class="about-nav-link" href="#lore">lore</a>
+            <a class="about-nav-link" href="#practice">tools</a>
+            <a class="about-nav-link" href="#inspiration">inspo</a>
+            <a class="about-nav-link" href="#contact">contact</a>
+          </nav>
+          <a class="about-aside-link" href="mailto:hello@example.com">say hello <span aria-hidden="true">↗</span></a>
+        </aside>
+
+        <div class="about-content">
+          <section class="about-intro about-anchor reveal" id="hi" aria-labelledby="about-title">
+            <div class="about-note">
+              <img src="assets/star.svg" alt="" />
+              <p>applied<br />computation,<br />year 3</p>
+              <span>@ blr, india.</span>
+            </div>
+            <div class="about-bio">
+              <p class="eyebrow">hi!</p>
+              <h1 id="about-title">kshiraja ragothaman</h1>
+              <div class="bio-facts">
+                <span><span class="fact-icon" aria-hidden="true">⌖</span> bengaluru, india</span>
+                <span><span class="fact-icon" aria-hidden="true">✳</span> applied computation, year 3</span>
+              </div>
+              <p class="bio-placeholder">
+                from a robot that looks away to a soup you can walk around in.
+              </p>
+              <p class="bio-signoff">designer who loves to play.</p>
+            </div>
+          </section>
+
+          <section class="about-section about-anchor reveal" id="experience">
+            <div class="about-section-heading">
+              <div>
+                <p class="eyebrow">a path, still unfolding</p>
+                <h2>experience</h2>
+              </div>
+              <span class="section-index">01</span>
+            </div>
+            <div class="empty-note">
+              <span class="empty-note-mark" aria-hidden="true">✳</span>
+              <p>roles, projects, and the things i learned along the way will go here.</p>
+            </div>
+          </section>
+
+          <section class="about-section about-anchor reveal" id="community">
+            <div class="about-section-heading">
+              <div>
+                <p class="eyebrow">good things are better together</p>
+                <h2>community</h2>
+              </div>
+              <span class="section-index">02</span>
+            </div>
+            <div class="community-note">
+              <p>the people and communities that make it all worth it.</p>
+              <span aria-hidden="true">♡</span>
+            </div>
+          </section>
+
+          <section class="about-section about-anchor reveal" id="philosophy">
+            <div class="about-section-heading">
+              <div>
+                <p class="eyebrow">a.k.a. my design + life philosophy</p>
+                <h2>philosophy</h2>
+              </div>
+              <span class="section-index">03</span>
+            </div>
+            <blockquote class="philosophy-card">
+              <span aria-hidden="true">“</span>
+              <div class="about-practice-list">
+                <p><strong>i hand over control.</strong><span>the robot: i script it. make it up: players write it. waypoint: the user steers. soup: visitors roam.</span></p>
+                <p><strong>matter first, then screen.</strong><span>cardboard, cards, a kitchen. code is how i carry something physical into a browser.</span></p>
+                <p><strong>play is my test method.</strong><span>ignored points reshaped a game. user tests reshaped an agent. i build, watch, then cut.</span></p>
+                <p><strong>tools that give people room.</strong><span>to make things up, to think a project through, to slow down.</span></p>
+              </div>
+            </blockquote>
+          </section>
+
+          <section class="about-section about-anchor reveal" id="shelf">
+            <div class="about-section-heading shelf-heading">
+              <div>
+                <p class="eyebrow">little things on repeat</p>
+                <h2>shelf</h2>
+              </div>
+              <div class="shelf-tabs" role="tablist" aria-label="Shelf categories">
+                <button class="shelf-tab is-selected" id="tab-books" type="button" role="tab" aria-selected="true" aria-controls="shelf-panel" data-shelf="books">books</button>
+                <button class="shelf-tab" id="tab-music" type="button" role="tab" aria-selected="false" aria-controls="shelf-panel" data-shelf="music" tabindex="-1">music</button>
+                <button class="shelf-tab" id="tab-movies" type="button" role="tab" aria-selected="false" aria-controls="shelf-panel" data-shelf="movies" tabindex="-1">movies</button>
+              </div>
+            </div>
+            <div class="shelf-panel" id="shelf-panel" role="tabpanel" aria-labelledby="tab-books" tabindex="0">
+              <p class="shelf-empty">a few favorites will find their place here.</p>
+            </div>
+          </section>
+
+          <section class="about-section about-anchor reveal" id="lore">
+            <div class="about-section-heading">
+              <div>
+                <p class="eyebrow">little snippets from past lives</p>
+                <h2>lore <span class="lore-mark" aria-hidden="true">⟡˙⋆</span></h2>
+              </div>
+              <span class="section-index">04</span>
+            </div>
+            <div class="lore-card">
+              <p>from a robot that looks away to a soup you can walk around in.</p>
+              <img src="assets/star.svg" alt="" />
+            </div>
+          </section>
+
+          <section class="about-section about-anchor reveal" id="practice">
+            <div class="about-section-heading">
+              <div><p class="eyebrow">the things i reach for</p><h2>tools</h2></div>
+              <span class="section-index">05</span>
+            </div>
+            <div class="about-tools-grid">
+              <div class="about-tool-card"><p class="eyebrow">physical computing</p><p>arduino · c++</p></div>
+              <div class="about-tool-card"><p class="eyebrow">code + sound</p><p>python · pygame · p5.js · tone.js · node · sockets · r</p></div>
+              <div class="about-tool-card"><p class="eyebrow">web + interaction</p><p>lens studio js · web js · three.js</p></div>
+              <div class="about-tool-card"><p class="eyebrow">exploration</p><p>figma · agent tools</p></div>
+            </div>
+          </section>
+
+          <section class="about-section about-anchor reveal" id="inspiration">
+            <div class="about-section-heading">
+              <div><p class="eyebrow">good corners of the internet</p><h2>inspiration</h2></div>
+              <span class="section-index">06</span>
+            </div>
+            <div class="inspiration-list">
+              <span>megan yap</span><span>lauryn kinsella</span>
+              <span>michelle liu</span><span>maya parthasarathy</span>
+            </div>
+          </section>
+
+          <section class="about-section about-anchor reveal" id="contact">
+            <div class="about-section-heading">
+              <div><p class="eyebrow">let's make something good</p><h2>contact</h2></div>
+              <span class="section-index">07</span>
+            </div>
+            <p class="contact-note">email and linkedin details coming soon.</p>
+          </section>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <a class="wordmark footer-mark" href="index.html">
+          <img class="star-mark" src="assets/star.svg" alt="" />
+          <span>kshiraja</span>
+        </a>
+        <p>made with curiosity, in bengaluru. <span>© <span data-year></span></span></p>
+        <a class="footer-email" href="mailto:hello@example.com">say hello <span aria-hidden="true">↗</span></a>
+      </footer>
+    </div>
+  </body>
+</html>

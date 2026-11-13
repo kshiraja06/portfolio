@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Kshiraja Ragothaman | designer who loves to play."
+    />
+    <meta name="theme-color" content="#faf8f3" />
+    <title>Kshiraja Ragothaman | Designer who loves to play</title>
+    <script>
+      const savedTheme = localStorage.getItem("kshiraja-theme");
+      if (savedTheme === "light" || savedTheme === "dark") {
+        document.documentElement.dataset.theme = savedTheme;
+      }
+    </script>
+    <link rel="icon" href="assets/star.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Cousine:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="page-loader" role="status" aria-label="Loading portfolio">
+      <span class="loader-star" aria-hidden="true"></span>
+      <span class="loader-name">kshiraja</span>
+      <span class="loader-track"><span></span></span>
+    </div>
+    <div class="night-sky" aria-hidden="true"></div>
+    <div class="custom-cursor" aria-hidden="true"></div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="page-shell">
+      <header class="site-header site-header--home">
+        <a class="wordmark" href="index.html" aria-label="Kshiraja, home">
+          <img class="star-mark" src="assets/star.svg" alt="" />
+          <span>kshiraja</span>
+        </a>
+        <p class="header-location">2006 <span>·</span> @ blr, india.</p>
+        <button class="theme-toggle"
+          type="button"
+          aria-label="Switch to dark mode"
+          aria-pressed="false"
+        >
+          <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.2 15.1A8.3 8.3 0 0 1 8.9 3.8 8.6 8.6 0 1 0 20.2 15.1Z" />
+          </svg>
+          <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+          </svg>
+        </button>
+      </header>
+
+      <main>
+        <section class="home-hero reveal" aria-labelledby="home-title">
+          <p class="eyebrow">curiosity first</p>
+          <h1 id="home-title">kshiraja ragothaman</h1>
+          <p class="hero-subtitle">designer who loves to play.</p>
+          <p class="hero-description">i love to learn the rules to break them &lt;3</p>
+          <nav class="site-nav page-switcher" aria-label="Main navigation">
+            <a class="nav-link is-active" href="index.html" aria-current="page">work</a>
+            <a class="nav-link" href="tinker.html">tinker</a>
+            <a class="nav-link" href="about.html">about</a>
+            <span class="nav-indicator" aria-hidden="true"></span>
+          </nav>
+        </section>
+
+        <section class="section work-section" id="work" aria-labelledby="work-title">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow section-kicker">01 / selected work</p>
+              <h2 id="work-title">work</h2>
+            </div>
+            <p class="section-note">a collection of things made with care.</p>
+          </div>
+
+          <div class="project-grid">
+            <a class="project-card reveal" href="make-it-up.html" aria-label="View the Make It Up case study">
+              <span class="project-color project-color--blue">
+                <span class="project-index">make it up <span>·</span> 2026</span>
+                <span class="project-card-title">a story for a very demanding boss.</span>
+                <span class="project-card-arrow" aria-hidden="true">↗</span>
+                <span class="project-hover-label">view case study</span>
+              </span>
+              <span class="project-meta">
+                <span class="project-overline">make it up</span>
+                <span class="project-description">players invent the most convincing story for a demanding boss.</span>
+              </span>
+            </a>
+
+            <a class="project-card reveal" href="rejection-robot.html" aria-label="View the Rejection Robot case study">
+              <span class="project-color project-color--lilac">
+                <span class="project-index">rejection robot <span>·</span> 2024</span>
+                <span class="project-card-title">a robot that would rather look away.</span>
+                <span class="project-card-arrow" aria-hidden="true">↗</span>
+                <span class="project-hover-label">view case study</span>
+              </span>
+              <span class="project-meta">
+                <span class="project-overline">rejection robot</span>
+                <span class="project-description">a robot that does not want to interact with you.</span>
+              </span>
+            </a>
+
+            <a class="project-card reveal" href="waypoint.html" aria-label="View the Waypoint case study">
+              <span class="project-color project-color--lime">
+                <span class="project-index">waypoint <span>·</span> 2026</span>
+                <span class="project-card-title">a workspace that helps, never decides.</span>
+                <span class="project-card-arrow" aria-hidden="true">↗</span>
+                <span class="project-hover-label">view case study</span>
+              </span>
+              <span class="project-meta">
+                <span class="project-overline">waypoint</span>
+                <span class="project-description">a quiet workspace that files your notes, connects you to people, and checks in on the brief.</span>
+              </span>
+            </a>
+
+            <a class="project-card reveal" href="we-are-in-a-soup.html" aria-label="View the We Are in a Soup case study">
+              <span class="project-color project-color--rose">
+                <span class="project-index">we are in a soup <span>·</span> year tbd</span>
+                <span class="project-card-title">a community kitchen you can walk around in.</span>
+                <span class="project-card-arrow" aria-hidden="true">↗</span>
+                <span class="project-hover-label">view case study</span>
+              </span>
+              <span class="project-meta">
+                <span class="project-overline">we are in a soup</span>
+                <span class="project-description">a student-run community kitchen reminding you to slow down.</span>
+              </span>
+            </a>
+
+            <button
+              class="project-card project-card--locked reveal"
+              type="button"
+              aria-disabled="true"
+              data-locked-project
+            >
+              <span class="project-color project-color--locked">
+                <span class="project-index">habit tracker <span>·</span> year tbd</span>
+                <span class="project-card-title">a little something in the works.</span>
+                <span class="project-card-arrow" aria-hidden="true">↗</span>
+                <span class="project-hover-label">coming soon</span>
+                <span class="locked-tag">case study in progress</span>
+              </span>
+              <span class="project-meta">
+                <span class="project-overline">habit tracker</span>
+                <span class="project-description">caption coming soon.</span>
+              </span>
+            </button>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <a class="wordmark footer-mark" href="index.html">
+          <img class="star-mark" src="assets/star.svg" alt="" />
+          <span>kshiraja</span>
+        </a>
+        <p>made with curiosity, in bengaluru. <span>© <span data-year></span></span></p>
+        <a class="footer-email" href="mailto:hello@example.com">say hello <span aria-hidden="true">↗</span></a>
+      </footer>
+    </div>
+
+  </body>
+</html>
