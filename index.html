@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Kshiraja Ragothaman | designer who loves to play."
+      content="kshiraja ragothaman"
     />
     <meta name="theme-color" content="#faf8f3" />
-    <title>Kshiraja Ragothaman | Designer who loves to play</title>
+    <title>kshiraja ragothaman</title>
     <script>
       const savedTheme = localStorage.getItem("kshiraja-theme");
       if (savedTheme === "light" || savedTheme === "dark") {
@@ -31,16 +31,56 @@
       <span class="loader-name">kshiraja</span>
       <span class="loader-track"><span></span></span>
     </div>
+    <dialog
+      class="intro-gate"
+      aria-labelledby="intro-title"
+    >
+      <div class="space-backdrop" aria-hidden="true">
+        <div class="space-starfield"></div>
+        <span class="space-nebula"></span>
+      </div>
+      <div class="space-light" aria-hidden="true"></div>
+      <div class="space-intro">
+        <button class="space-ship" type="button" data-intro-explore aria-label="Explore the portfolio" autofocus>
+          <svg class="spaceship" viewBox="0 0 120 88" aria-hidden="true">
+            <defs>
+              <linearGradient id="ship-hull-fill" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#fff5c9" />
+                <stop offset="1" stop-color="#e4a6ff" />
+              </linearGradient>
+            </defs>
+            <path class="spaceship-dome" d="M43 40c2-13 9-21 17-21s15 8 17 21Z" />
+            <ellipse class="spaceship-hull" cx="60" cy="42" rx="43" ry="13" />
+            <circle class="spaceship-window" cx="43" cy="41" r="3" />
+            <circle class="spaceship-window" cx="60" cy="38" r="3.5" />
+            <circle class="spaceship-window" cx="77" cy="41" r="3" />
+            <path class="spaceship-flame" d="M50 54 56 68l4-10 5 12 6-16" />
+          </svg>
+        </button>
+        <div class="space-welcome">
+          <p class="space-kicker">welcome to</p>
+          <h1 id="intro-title">kshiraja's<br />tinker space <span>&lt;3</span></h1>
+        </div>
+        <button class="space-explore" type="button" data-intro-explore>explore</button>
+      </div>
+      <div class="custom-cursor custom-cursor--intro" aria-hidden="true"></div>
+    </dialog>
     <div class="night-sky" aria-hidden="true"></div>
     <div class="custom-cursor" aria-hidden="true"></div>
     <div class="scroll-progress" aria-hidden="true"></div>
     <div class="page-shell">
-      <header class="site-header site-header--home">
+      <header class="site-header">
         <a class="wordmark" href="index.html" aria-label="Kshiraja, home">
           <img class="star-mark" src="assets/star.svg" alt="" />
           <span>kshiraja</span>
         </a>
         <p class="header-location">2006 <span>·</span> @ blr, india.</p>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a class="nav-link is-active" href="index.html" aria-current="page">work</a>
+          <a class="nav-link" href="tinker.html">tinker</a>
+          <a class="nav-link" href="about.html">about</a>
+          <span class="nav-indicator" aria-hidden="true"></span>
+        </nav>
         <button class="theme-toggle"
           type="button"
           aria-label="Switch to dark mode"
@@ -56,18 +96,21 @@
         </button>
       </header>
 
-      <main>
+      <main class="home-main">
         <section class="home-hero reveal" aria-labelledby="home-title">
           <p class="eyebrow">curiosity first</p>
           <h1 id="home-title">kshiraja ragothaman</h1>
-          <p class="hero-subtitle">designer who loves to play.</p>
-          <p class="hero-description">i love to learn the rules to break them &lt;3</p>
-          <nav class="site-nav page-switcher" aria-label="Main navigation">
-            <a class="nav-link is-active" href="index.html" aria-current="page">work</a>
-            <a class="nav-link" href="tinker.html">tinker</a>
-            <a class="nav-link" href="about.html">about</a>
-            <span class="nav-indicator" aria-hidden="true"></span>
-          </nav>
+          <p class="hero-subtitle">interdisciplinary designer who loves to play.</p>
+        </section>
+
+        <section class="latest-log reveal" aria-labelledby="latest-log-title">
+          <div class="latest-log__header">
+            <h2 id="latest-log-title">latest log</h2>
+            <time datetime="2026-11-16">nov 16, 2026</time>
+            <a class="latest-log__link" href="logs.html">go to all logs <span aria-hidden="true">→</span></a>
+          </div>
+          <p class="latest-log__title">exploring other interests</p>
+          <p class="latest-log__entry">new film class coming up, downloaded the rhyme game, rap career soon!?</p>
         </section>
 
         <section class="section work-section" id="work" aria-labelledby="work-title">
@@ -76,80 +119,101 @@
               <p class="eyebrow section-kicker">01 / selected work</p>
               <h2 id="work-title">work</h2>
             </div>
-            <p class="section-note">a collection of things made with care.</p>
+            <p class="section-note">case studies to help explain not just what, but why.</p>
           </div>
-
           <div class="project-grid">
-            <a class="project-card reveal" href="make-it-up.html" aria-label="View the Make It Up case study">
-              <span class="project-color project-color--blue">
-                <span class="project-index">make it up <span>·</span> 2026</span>
-                <span class="project-card-title">a story for a very demanding boss.</span>
-                <span class="project-card-arrow" aria-hidden="true">↗</span>
-                <span class="project-hover-label">view case study</span>
-              </span>
-              <span class="project-meta">
-                <span class="project-overline">make it up</span>
-                <span class="project-description">players invent the most convincing story for a demanding boss.</span>
-              </span>
+            <a class="project-card project-card--game reveal" href="make-it-up.html" aria-label="View the Make It Up case study">
+              <div class="project-card__media" aria-hidden="true">
+                <img class="project-card__image" src="assets/make-it-up/hero.png" alt="" loading="lazy" decoding="async" />
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__heading">
+                  <div class="project-card__heading-name"><h3 class="project-card__title">make it up</h3><span class="project-card__year">2026</span></div>
+                  <span class="project-card__kind">storytelling game</span>
+                </div>
+                <p class="project-card__description">a storytelling card game for a very demanding boss.</p>
+                <dl class="project-card__facts">
+                  <div><dt>role</dt><dd>systems thinking · visual identity · packaging · UX</dd></div>
+                  <div><dt>team</dt><dd>4 designers</dd></div>
+                  <div><dt>timeline</dt><dd>march 2026 · two weeks</dd></div>
+                </dl>
+              </div>
             </a>
 
-            <a class="project-card reveal" href="rejection-robot.html" aria-label="View the Rejection Robot case study">
-              <span class="project-color project-color--lilac">
-                <span class="project-index">rejection robot <span>·</span> 2024</span>
-                <span class="project-card-title">a robot that would rather look away.</span>
-                <span class="project-card-arrow" aria-hidden="true">↗</span>
-                <span class="project-hover-label">view case study</span>
-              </span>
-              <span class="project-meta">
-                <span class="project-overline">rejection robot</span>
-                <span class="project-description">a robot that does not want to interact with you.</span>
-              </span>
+            <a class="project-card project-card--waypoint reveal" href="waypoint.html" aria-label="View the Waypoint case study">
+              <div class="project-card__media" aria-hidden="true">
+                <img class="project-card__image" src="assets/waypoint/hero-poster.jpg" alt="" loading="lazy" decoding="async" />
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__heading">
+                  <div class="project-card__heading-name"><h3 class="project-card__title">waypoint</h3><span class="project-card__year">2026</span></div>
+                  <span class="project-card__kind">research workspace</span>
+                </div>
+                <p class="project-card__description">a workspace that gathers notes, connects people, and helps make sense of the brief.</p>
+                <dl class="project-card__facts">
+                  <div><dt>role</dt><dd>concept · UX design · prototype</dd></div>
+                  <div><dt>team</dt><dd>4 designers</dd></div>
+                  <div><dt>timeline</dt><dd>october 2026 · 3-day sprint</dd></div>
+                </dl>
+              </div>
             </a>
 
-            <a class="project-card reveal" href="waypoint.html" aria-label="View the Waypoint case study">
-              <span class="project-color project-color--lime">
-                <span class="project-index">waypoint <span>·</span> 2026</span>
-                <span class="project-card-title">a workspace that helps, never decides.</span>
-                <span class="project-card-arrow" aria-hidden="true">↗</span>
-                <span class="project-hover-label">view case study</span>
-              </span>
-              <span class="project-meta">
-                <span class="project-overline">waypoint</span>
-                <span class="project-description">a quiet workspace that files your notes, connects you to people, and checks in on the brief.</span>
-              </span>
+            <a class="project-card project-card--soup reveal" href="we-are-in-a-soup.html" aria-label="View the We Are in a Soup case study">
+              <div class="project-card__media" aria-hidden="true">
+                <img class="project-card__image" src="assets/we-are-in-a-soup/hero.png" alt="" loading="lazy" decoding="async" />
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__heading">
+                  <div class="project-card__heading-name"><h3 class="project-card__title">we are in a soup</h3><span class="project-card__year">2025</span></div>
+                  <span class="project-card__kind">community experience</span>
+                </div>
+                <p class="project-card__description">a student-run community kitchen reimagined as an interactive world online.</p>
+                <dl class="project-card__facts">
+                  <div><dt>format</dt><dd>interactive website</dd></div>
+                  <div><dt>team</dt><dd>collaborative project</dd></div>
+                  <div><dt>focus</dt><dd>community kitchen · 4 tables</dd></div>
+                </dl>
+              </div>
             </a>
 
-            <a class="project-card reveal" href="we-are-in-a-soup.html" aria-label="View the We Are in a Soup case study">
-              <span class="project-color project-color--rose">
-                <span class="project-index">we are in a soup <span>·</span> year tbd</span>
-                <span class="project-card-title">a community kitchen you can walk around in.</span>
-                <span class="project-card-arrow" aria-hidden="true">↗</span>
-                <span class="project-hover-label">view case study</span>
-              </span>
-              <span class="project-meta">
-                <span class="project-overline">we are in a soup</span>
-                <span class="project-description">a student-run community kitchen reminding you to slow down.</span>
-              </span>
+            <a class="project-card project-card--robot reveal" href="rejection-robot.html" aria-label="View the Byebot case study">
+              <div class="project-card__media" aria-hidden="true">
+                <img class="project-card__image" src="assets/byebot/hero.png" alt="" loading="lazy" decoding="async" />
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__heading">
+                  <div class="project-card__heading-name"><h3 class="project-card__title">byebot</h3><span class="project-card__year">2024</span></div>
+                  <span class="project-card__kind">kinetic art</span>
+                </div>
+                <p class="project-card__description">a robot that turns away when something gets too close.</p>
+                <dl class="project-card__facts">
+                  <div><dt>role</dt><dd>robotics · physical computing</dd></div>
+                  <div><dt>team</dt><dd>2 people</dd></div>
+                  <div><dt>materials</dt><dd>cardboard · sensor · servo · LEDs</dd></div>
+                </dl>
+              </div>
             </a>
 
-            <button
-              class="project-card project-card--locked reveal"
-              type="button"
-              aria-disabled="true"
-              data-locked-project
-            >
-              <span class="project-color project-color--locked">
-                <span class="project-index">habit tracker <span>·</span> year tbd</span>
-                <span class="project-card-title">a little something in the works.</span>
-                <span class="project-card-arrow" aria-hidden="true">↗</span>
-                <span class="project-hover-label">coming soon</span>
-                <span class="locked-tag">case study in progress</span>
-              </span>
-              <span class="project-meta">
-                <span class="project-overline">habit tracker</span>
-                <span class="project-description">caption coming soon.</span>
-              </span>
-            </button>
+            <a class="project-card project-card--cat-panion reveal" href="cat-panion.html" aria-label="View the Cat-panion case study">
+              <div class="project-card__media" aria-hidden="true">
+                <video class="project-card__image" autoplay muted loop playsinline preload="metadata" poster="assets/cat-panion/summon-all.png" aria-hidden="true">
+                  <source src="assets/cat-panion/hero.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__heading">
+                  <div class="project-card__heading-name"><h3 class="project-card__title">cat-panion</h3><span class="project-card__year">2026</span></div>
+                  <span class="project-card__kind">focus buddies</span>
+                </div>
+                <p class="project-card__description">some buddies to keep you on track :)</p>
+                <dl class="project-card__facts">
+                  <div><dt>role</dt><dd>sole designer + builder</dd></div>
+                  <div><dt>team</dt><dd>just me :')</dd></div>
+                  <div><dt>timeline</dt><dd>may 2026 · 1 week</dd></div>
+                </dl>
+              </div>
+            </a>
+
           </div>
         </section>
       </main>
@@ -160,7 +224,6 @@
           <span>kshiraja</span>
         </a>
         <p>made with curiosity, in bengaluru. <span>© <span data-year></span></span></p>
-        <a class="footer-email" href="mailto:hello@example.com">say hello <span aria-hidden="true">↗</span></a>
       </footer>
     </div>
 

@@ -33,6 +33,10 @@
     </div>
     <div class="night-sky" aria-hidden="true"></div>
     <div class="custom-cursor" aria-hidden="true"></div>
+    <aside class="tinker-cursor-pop" aria-hidden="true">
+      <span class="tinker-cursor-pop__title"></span>
+      <span class="tinker-cursor-pop__description"></span>
+    </aside>
     <div class="scroll-progress" aria-hidden="true"></div>
     <div class="page-shell">
       <header class="site-header">
@@ -68,97 +72,104 @@
           <p class="eyebrow">02 / little experiments</p>
           <h1 id="tinker-title">a place to play.</h1>
           <p class="page-description">
-            experiments, small ideas, and half-finished things. a collection, still growing.
+            experimenting and ideating with lots of curiosity <3
           </p>
         </section>
 
-        <div class="tinker-filters reveal" role="group" aria-label="Filter experiments by medium">
-          <button class="filter-chip is-selected" type="button" data-medium-filter="all" aria-pressed="true">all</button>
-          <button class="filter-chip" type="button" data-medium-filter="code" aria-pressed="false">code</button>
-          <button class="filter-chip" type="button" data-medium-filter="illustration" aria-pressed="false">illustration</button>
-          <button class="filter-chip" type="button" data-medium-filter="ar" aria-pressed="false">ar</button>
-          <button class="filter-chip" type="button" data-medium-filter="figma" aria-pressed="false">figma</button>
-          <button class="filter-chip" type="button" data-medium-filter="film" aria-pressed="false">film</button>
-          <button class="filter-chip" type="button" data-medium-filter="packaging" aria-pressed="false">packaging</button>
-        </div>
-        <div class="status-filters reveal" role="group" aria-label="Filter experiments by status">
-          <span class="filter-group-label">status</span>
-          <button class="filter-chip is-selected" type="button" data-status-filter="all" aria-pressed="true">all</button>
-          <button class="filter-chip" type="button" data-status-filter="finished" aria-pressed="false">finished</button>
-          <button class="filter-chip" type="button" data-status-filter="in progress" aria-pressed="false">in progress</button>
-          <button class="filter-chip" type="button" data-status-filter="prototype" aria-pressed="false">prototype</button>
-          <button class="filter-chip" type="button" data-status-filter="idea" aria-pressed="false">idea</button>
-        </div>
-
         <section class="pinboard" aria-label="A pinboard of experiments">
-          <article class="tinker-card tile-lilac reveal" data-medium="ar lens-studio" data-status="finished">
-            <p class="tinker-title">burger ar</p><p class="tinker-description">yummy experiments in ar.</p>
-            <div class="tinker-tags"><span>ar</span><span>lens studio</span></div><span class="status-tag">finished</span>
+          <article class="tinker-card tile-olive has-media reveal" style="--media-ratio: 16 / 9">
+            <iframe
+              class="tinker-media tinker-youtube"
+              src="https://www.youtube-nocookie.com/embed/IwC0-9B8b2o?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=IwC0-9B8b2o&amp;controls=0&amp;playsinline=1"
+              title="Philosophy film: a short film asking whether we all exist for a reason"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <p class="tinker-title">philosophy film</p><p class="tinker-description">a short film asking whether we all exist for a reason.</p>
           </article>
-          <article class="tinker-card tile-peach tile-tall reveal" data-medium="code pygame" data-status="finished">
-            <p class="tinker-title">dog's touch</p><p class="tinker-description">guide a pack of chaotic campus dogs through a baking adventure.</p>
-            <div class="tinker-tags"><span>code</span><span>pygame</span></div><span class="status-tag">finished</span>
+          <article class="tinker-card tile-lilac has-media reveal" style="--media-ratio: 9 / 16">
+            <video class="tinker-media" muted loop playsinline preload="none" aria-hidden="true">
+              <source src="assets/tinker/web-media/burger.mp4" type="video/mp4" />
+            </video>
+            <p class="tinker-title">burger ar</p><p class="tinker-description">a playful burger lens, made in lens studio.</p>
           </article>
-          <article class="tinker-card tile-blue tile-medium reveal" data-medium="code p5.js" data-status="finished">
-            <p class="tinker-title">audio field</p><p class="tinker-description">audio visuals. song in play: nights by frank ocean.</p>
-            <div class="tinker-tags"><span>code</span><span>p5.js</span></div><span class="status-tag">finished</span>
+          <article class="tinker-card tile-peach has-media reveal" style="--media-ratio: 225 / 172">
+            <video class="tinker-media" muted loop playsinline preload="none" aria-hidden="true">
+              <source src="assets/tinker/dog-touch.mp4" type="video/mp4" />
+            </video>
+            <p class="tinker-title">dog's touch</p><p class="tinker-description">herd campus dogs through a chaotic baking game.</p>
           </article>
-          <article class="tinker-card tile-olive tile-short reveal" data-medium="code p5.js" data-status="finished">
-            <p class="tinker-title">sequencer</p><p class="tinker-description">a bpm slider schedules the whole sound.</p>
-            <div class="tinker-tags"><span>code</span><span>p5.js</span></div><span class="status-tag">finished</span>
+          <article class="tinker-card tile-blue has-media reveal" style="--media-ratio: 240 / 427">
+            <video class="tinker-media" muted loop playsinline preload="none" aria-hidden="true">
+              <source src="assets/tinker/web-media/audio-field.mp4" type="video/mp4" />
+            </video>
+            <p class="tinker-title">audio field</p><p class="tinker-description">an audio-reactive visualizer set to frank ocean's “nights.”</p>
           </article>
-          <article class="tinker-card tile-lime tile-tall reveal" data-medium="code illustration electron" data-status="finished">
-            <span class="companion-cat" aria-hidden="true">🐈</span>
-            <p class="tinker-title">thought companions</p><p class="tinker-description">little desktop companions for your thoughts, ideas, and tasks.</p>
-            <div class="tinker-tags"><span>code</span><span>illustration</span></div>
-            <span class="status-tag">finished</span>
-            <div class="companion-actions"><button type="button" data-new-task>new task</button><a href="thought-companions.html">view case study</a></div>
+          <article class="tinker-card tile-periwinkle has-media reveal" style="--media-ratio: 82 / 47">
+            <video class="tinker-media" muted loop playsinline preload="none" aria-hidden="true">
+              <source src="assets/tinker/pixelify.mp4" type="video/mp4" />
+            </video>
+            <p class="tinker-title">pxlfy</p><p class="tinker-description">pixel activities: take a picture, then play.</p>
           </article>
-          <article class="tinker-card tile-periwinkle tile-medium reveal" data-medium="code" data-status="in progress">
-            <p class="tinker-title">pxlfy</p><p class="tinker-description">a collection of fun pixel activities. take a picture, play a game.</p>
-            <div class="tinker-tags"><span>code</span></div><span class="status-tag">status to confirm</span>
+          <article class="tinker-card tile-dark has-media reveal" style="--media-ratio: 496 / 907">
+            <img class="tinker-media" src="assets/tinker/roommate.png" alt="" loading="lazy" decoding="async" />
+            <p class="tinker-title">roommate predictor</p><p class="tinker-description">a playful compatibility model using our class survey.</p>
           </article>
-          <article class="tinker-card tile-rose tile-short reveal" data-medium="code node tone.js" data-status="finished">
-            <p class="tinker-title">sound orchestra</p><p class="tinker-description">shared-clock sound experiment. more details to come.</p>
-            <div class="tinker-tags"><span>code</span><span>node</span><span>tone.js</span></div><span class="status-tag">finished</span>
+          <article class="tinker-card tile-lavender has-media reveal" style="--media-ratio: 64 / 27" data-gallery="concept-art" role="button" aria-haspopup="dialog" aria-label="Open Concept Art gallery">
+            <img class="tinker-media" src="assets/tinker/gallery/concept-art-block.jpg" alt="" loading="lazy" decoding="async" />
+            <p class="tinker-title">concept art</p><p class="tinker-description">a speculative island world, drawn in color and texture.</p>
           </article>
-          <article class="tinker-card tile-dark tile-medium reveal" data-medium="code r" data-status="finished">
-            <p class="tinker-title">roommate predictor</p><p class="tinker-description">a compatibility prediction experiment using a dataset we made with google forms.</p>
-            <div class="tinker-tags"><span>code</span><span>r</span></div><span class="status-tag">finished</span>
+          <article class="tinker-card tile-pink has-media reveal" style="--media-ratio: 3500 / 4951" data-gallery="character-design" role="button" aria-haspopup="dialog" aria-label="Open Character Design gallery">
+            <img class="tinker-media" src="assets/tinker/gallery/characterdesign-block.jpg" alt="" loading="lazy" decoding="async" />
+            <p class="tinker-title">character design</p><p class="tinker-description">quick studies in mood, silhouette, and motion.</p>
           </article>
-          <article class="tinker-card tile-sage tile-short reveal" data-medium="code" data-status="in progress">
-            <p class="tinker-title">kannada science block builder</p><p class="tinker-description">more details to come.</p>
-            <div class="tinker-tags"><span>code</span></div><span class="status-tag">in progress</span>
+          <article class="tinker-card tile-lilac has-media reveal" style="--media-ratio: 2484 / 1757" data-gallery="science-visualization" role="button" aria-haspopup="dialog" aria-label="Open Science Visualization gallery">
+            <img class="tinker-media" src="assets/tinker/star-4.webp" alt="" loading="lazy" decoding="async" />
+            <p class="tinker-title">science visualization</p><p class="tinker-description">grounding abstract scientific concepts in illustrations</p>
           </article>
-          <article class="tinker-card tile-lavender tile-tall reveal" data-medium="illustration" data-status="finished">
-            <p class="tinker-title">concept art</p><p class="tinker-description">more details to come.</p>
-            <div class="tinker-tags"><span>illustration</span></div><span class="status-tag">finished</span>
+          <article class="tinker-card tile-peach has-media reveal" style="--media-ratio: 613 / 622">
+            <img class="tinker-media" src="assets/tinker/soda-branding.png" alt="" loading="lazy" decoding="async" />
+            <p class="tinker-title">garmi pop</p><p class="tinker-description">a bright, fizzy visual identity for a playful soda brand.</p>
           </article>
-          <article class="tinker-card tile-pink tile-medium reveal" data-medium="illustration" data-status="finished">
-            <p class="tinker-title">character design</p><p class="tinker-description">more details to come.</p>
-            <div class="tinker-tags"><span>illustration</span></div><span class="status-tag">finished</span>
+          <article class="tinker-card tile-blue has-media reveal" style="--media-ratio: 153 / 329" data-gallery="dibs" role="button" aria-haspopup="dialog" aria-label="Open Dibs gallery">
+            <video class="tinker-media" muted loop playsinline preload="none" aria-hidden="true">
+              <source src="assets/tinker/web-media/dibs-block.mp4" type="video/mp4" />
+            </video>
+            <p class="tinker-title">dibs!</p><p class="tinker-description">a 2am hostel marketplace for snacks and useful finds.</p>
           </article>
-          <article class="tinker-card tile-blue tile-short reveal" data-medium="figma" data-status="prototype">
-            <p class="tinker-title">dibs!</p><p class="tinker-description">a marketplace for hostel groups who are alive at 2am, looking for snacks, resources, and clothes.</p>
-            <div class="tinker-tags"><span>figma</span></div><span class="status-tag">prototype</span>
+          <article class="tinker-card tile-olive tile-medium reveal">
+            <p class="tinker-title">cat-panion</p><p class="tinker-description">little cat buddies to make staying focused feel a bit less lonely.</p>
           </article>
-          <article class="tinker-card tile-peach tile-medium reveal" data-medium="figma" data-status="idea">
-            <p class="tinker-title">morning widget</p><p class="tinker-description">an idea for a gentler way to start your morning.</p>
-            <div class="tinker-tags"><span>figma</span></div><span class="status-tag">idea</span>
+          <article class="tinker-card tinker-card--widget tile-peach has-media reveal" style="--media-ratio: 94 / 203">
+            <video class="tinker-media" muted loop playsinline preload="none" aria-hidden="true">
+              <source src="assets/tinker/morning-widget.mp4" type="video/mp4" />
+            </video>
+            <p class="tinker-title">morning widget</p><p class="tinker-description">a gentler, more personal start to the day.</p>
           </article>
-          <article class="tinker-card tile-lilac tile-short reveal" data-medium="packaging" data-status="finished">
-            <p class="tinker-title">over hrs</p><p class="tinker-description">packaging for a protein bar.</p>
-            <div class="tinker-tags"><span>packaging</span></div><span class="status-tag">finished</span>
+          <article class="tinker-card tile-lilac has-media reveal" style="--media-ratio: 3855 / 1711">
+            <img class="tinker-media" src="assets/tinker/overhrs.png" alt="" loading="lazy" decoding="async" />
+            <p class="tinker-title">over hrs</p><p class="tinker-description">packaging for a protein bar, made to stand out.</p>
           </article>
-          <article class="tinker-card tile-olive tile-medium reveal" data-medium="film" data-status="finished">
-            <p class="tinker-title">philosophy film</p><p class="tinker-description">a film on whether we all exist for a reason, shot and edited by me &lt;3</p>
-            <div class="tinker-tags"><span>film</span></div><span class="status-tag">finished</span>
-          </article>
-          <article class="tinker-card tile-dark tile-short reveal" data-medium="code" data-status="in progress">
-            <p class="tinker-title">desk cat</p><p class="tinker-description">a program that meows when it notices something on my desk.</p>
-            <div class="tinker-tags"><span>code</span></div><span class="status-tag">in progress · name tbd</span>
+          <article class="tinker-card tile-olive has-media reveal" style="--media-ratio: 16 / 9">
+            <video class="tinker-media" muted loop playsinline preload="none" aria-hidden="true">
+              <source src="assets/tinker/desk-cat.mp4" type="video/mp4" />
+            </video>
+            <p class="tinker-title">desk cat</p><p class="tinker-description">a very early prototype of a cat that watches the cleanliness of your desk and meows when it's messy.</p>
           </article>
         </section>
+        <dialog class="tinker-gallery" aria-labelledby="tinker-gallery-title">
+          <div class="tinker-gallery__header">
+            <h2 class="tinker-gallery__title" id="tinker-gallery-title"></h2>
+            <button class="tinker-gallery__close" type="button" aria-label="Close gallery">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m6 6 12 12M18 6 6 18" />
+              </svg>
+            </button>
+          </div>
+          <div class="tinker-gallery__grid"></div>
+        </dialog>
       </main>
 
       <footer class="site-footer">
@@ -167,22 +178,7 @@
           <span>kshiraja</span>
         </a>
         <p>made with curiosity, in bengaluru. <span>© <span data-year></span></span></p>
-        <a class="footer-email" href="mailto:hello@example.com">say hello <span aria-hidden="true">↗</span></a>
       </footer>
     </div>
-    <dialog class="task-dialog">
-      <form class="task-form" method="dialog">
-        <button class="dialog-close task-dialog-close" type="button" aria-label="Close new task">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m18 6-12 12M6 6l12 12" /></svg>
-        </button>
-        <p class="eyebrow">a little companion</p>
-        <h2>what's on your mind?</h2>
-        <label for="new-task">a small thing to remember</label>
-        <input id="new-task" name="task" maxlength="160" placeholder="water the tiny plant..." required />
-        <p class="task-storage-note">tasks are saved in your browser only.</p>
-        <button class="task-submit" type="submit">save a task</button>
-        <ul class="task-list" aria-live="polite"></ul>
-      </form>
-    </dialog>
   </body>
 </html>

@@ -1,116 +1,305 @@
 <!doctype html>
 <html lang="en" data-theme="light">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Make It Up is a storytelling card game for very demanding bosses." />
-    <meta name="theme-color" content="#faf8f3" />
-    <title>Make It Up | Kshiraja Ragothaman</title>
-    <script>const savedTheme=localStorage.getItem("kshiraja-theme");if(savedTheme==="light"||savedTheme==="dark")document.documentElement.dataset.theme=savedTheme;</script>
-    <link rel="icon" href="assets/star.svg" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Cousine:wght@400;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" /><script src="script.js" defer></script>
-  </head>
-  <body>
-    <div class="page-loader" role="status" aria-label="Loading portfolio"><img class="loader-star" src="assets/star.svg" alt="" /><span class="loader-name">kshiraja</span><span class="loader-track"><span></span></span></div>
-    <div class="night-sky" aria-hidden="true"></div><div class="custom-cursor" aria-hidden="true"></div><div class="scroll-progress" aria-hidden="true"></div>
-    <div class="page-shell">
-      <header class="site-header">
-        <a class="wordmark" href="index.html" aria-label="Kshiraja, home"><img class="star-mark" src="assets/star.svg" alt="" /><span>kshiraja</span></a>
-        <p class="header-location">2006 <span>·</span> @ blr, india.</p>
-        <nav class="site-nav" aria-label="Main navigation"><a class="nav-link is-active" href="index.html">work</a><a class="nav-link" href="tinker.html">tinker</a><a class="nav-link" href="about.html">about</a><span class="nav-indicator" aria-hidden="true"></span></nav>
-        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false"><svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.1A8.3 8.3 0 0 1 8.9 3.8 8.6 8.6 0 1 0 20.2 15.1Z" /></svg><svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" /></svg></button>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Make It Up is a storytelling card game for very demanding bosses." />
+  <meta name="theme-color" content="#faf8f3" />
+  <title>make it up</title>
+  <script>const savedTheme = localStorage.getItem("kshiraja-theme"); if (savedTheme === "light" || savedTheme === "dark") document.documentElement.dataset.theme = savedTheme;</script>
+  <link rel="icon" href="assets/star.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Cousine:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="page-loader" role="status" aria-label="Loading portfolio"><img class="loader-star" src="assets/star.svg"
+      alt="" /><span class="loader-name">kshiraja</span><span class="loader-track"><span></span></span></div>
+  <div class="night-sky" aria-hidden="true"></div>
+  <div class="custom-cursor" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="wordmark" href="index.html" aria-label="Kshiraja, home"><img class="star-mark" src="assets/star.svg"
+          alt="" /><span>kshiraja</span></a>
+      <p class="header-location">2006 <span>·</span> @ blr, india.</p>
+      <nav class="site-nav" aria-label="Main navigation"><a class="nav-link is-active" href="index.html">work</a><a
+          class="nav-link" href="tinker.html">tinker</a><a class="nav-link" href="about.html">about</a><span
+          class="nav-indicator" aria-hidden="true"></span></nav>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false"><svg
+          class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20.2 15.1A8.3 8.3 0 0 1 8.9 3.8 8.6 8.6 0 1 0 20.2 15.1Z" />
+        </svg><svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="4" />
+          <path
+            d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+        </svg></button>
+    </header>
+    <main class="case-study case-study--make-it-up">
+      <header class="case-hero reveal">
+        <a class="case-back-link" href="index.html#work"><span aria-hidden="true">←</span> all work</a>
+        <p class="eyebrow">storytelling card game</p>
+        <h1>make it up</h1>
+        <p class="case-subtitle">providing structure to an inherently subjective game.</p>
+        <figure class="make-it-up-hero-image">
+          <img
+            src="assets/make-it-up/hero.png"
+            alt="Friends play Make It Up around a table, building stories with illustrated cards."
+            fetchpriority="high"
+            decoding="async"
+          />
+        </figure>
+        <dl class="case-meta-grid">
+          <div>
+            <dt>role</dt>
+            <dd>systems thinking<br />visual identity<br />illustration and packaging<br />user experience</dd>
+          </div>
+          <div>
+            <dt>team</dt>
+            <dd>4 designers</dd>
+          </div>
+          <div>
+            <dt>timeline</dt>
+            <dd>march 2026<br />two weeks</dd>
+          </div>
+          <div>
+            <dt>tools</dt>
+            <dd>figma</dd>
+          </div>
+        </dl>
       </header>
-      <main class="case-study">
-        <header class="case-hero reveal">
-          <a class="case-back-link" href="index.html#work"><span aria-hidden="true">←</span> all work</a>
-          <p class="eyebrow">card game · 2026</p>
-          <h1>make it up</h1>
-          <p class="case-subtitle">players invent the most convincing story for a demanding boss.</p>
-          <div class="case-hero-color case-hero--make-it-up"><span>a storytelling card game</span><p>a story can go anywhere. especially when the boss is listening.</p></div>
-          <dl class="case-meta-grid">
-            <div><dt>role</dt><dd>card system, visual language, illustration, packaging</dd></div>
-            <div><dt>timeline</dt><dd>march 2026 · two weeks</dd></div>
-            <div><dt>team</dt><dd>ezhilan, yadhushri, haardik</dd></div>
-            <div><dt>players + tools</dt><dd>4+ per game · figma</dd></div>
-          </dl>
-        </header>
 
-        <section class="case-outcomes reveal">
-          <h2>what came out of it</h2>
-          <ul><li>a finished, printed game with four card categories, packaging, and sleeve.</li><li>around five playtests with four or more players, where alliances formed and collapsed.</li><li>players defended the logic of completely ridiculous stories with surprising conviction.</li></ul>
-        </section>
+      <section class="make-it-up-section make-it-up-outcomes reveal" aria-labelledby="make-it-up-outcomes-title">
+        <div class="make-it-up-section-heading">
+          <h2 id="make-it-up-outcomes-title">outcomes</h2>
+          <span aria-hidden="true"></span>
+        </div>
+        <div class="make-it-up-outcome-points">
+          <article>
+            <h3>a finished game!</h3>
+            <p>a finished, printed game with four card categories, packaging, a sleeve, and a 3D-printed round counter.</p>
+          </article>
+          <article>
+            <h3>room to grow</h3>
+            <p>the game sparked potential investment interest from a Disney games manager.</p>
+          </article>
+        </div>
+        <figure class="make-it-up-image">
+          <img
+            src="assets/make-it-up/outcomes.png"
+            alt="Playtesters gathered around a table, trying the Make It Up card game."
+            loading="lazy"
+            decoding="async"
+          />
+          <figcaption>the best way to find the story was to get everyone playing.</figcaption>
+        </figure>
+      </section>
 
-        <section class="case-section case-section--feature reveal">
-          <h2>context</h2>
-          <div class="case-section-copy">
-            <p class="case-pullquote">we started with a sci-fi escape game.</p>
-            <p>make it up started on the tiled floor outside raqs 204, after much suffering and effort to flesh out a grand, sci-fi, escape room-esque digital game. the original game plan was to create a game that retained d&amp;d's immersive experience, but was not limited to its usual mechanics.</p>
+      <section class="make-it-up-section make-it-up-context reveal" aria-labelledby="make-it-up-context-title">
+        <div class="make-it-up-section-heading">
+          <h2 id="make-it-up-context-title">context</h2>
+          <span aria-hidden="true"></span>
+        </div>
+        <h3 class="make-it-up-section-lede">we started with a sci-fi escape game.</h3>
+        <div class="make-it-up-prose">
+          <p>the initial plan was an immersive science-fiction game following a mad scientist.</p>
+          <p>we wanted players to build narratives they were invested in, with enough agency to make each story their own.</p>
+        </div>
+      </section>
+
+      <section class="make-it-up-section make-it-up-problem reveal" aria-labelledby="make-it-up-problem-title">
+        <div class="make-it-up-section-heading">
+          <h2 id="make-it-up-problem-title">the problem</h2>
+          <span aria-hidden="true"></span>
+        </div>
+        <h3 class="make-it-up-section-lede">we lost the plot.</h3>
+        <p class="make-it-up-problem-copy">
+          we experimented with cross-platform play, adding audio and virtual reality. everything connected through a local server on our laptop, acting as a makeshift digital game master.
+        </p>
+        <h4 class="make-it-up-flow-title">the original experience kept adding layers</h4>
+        <ol class="make-it-up-problem-flow">
+          <li><span>01</span><strong>cross-platform play</strong><small>players moving between mediums</small></li>
+          <li><span>02</span><strong>audio + virtual reality</strong><small>more ways to build the world</small></li>
+          <li><span>03</span><strong>a local server</strong><small>our laptop as digital game master</small></li>
+        </ol>
+        <p class="make-it-up-problem-close">it was getting too messy, so we scrapped it.</p>
+      </section>
+
+      <section class="make-it-up-section make-it-up-question reveal" aria-labelledby="make-it-up-question-title">
+        <div class="make-it-up-section-heading">
+          <h2 id="make-it-up-question-title">how might we?</h2>
+          <span aria-hidden="true"></span>
+        </div>
+        <h3 class="make-it-up-question-text">how might we give players agency and structure an inherently subjective game?</h3>
+        <p class="make-it-up-answer">
+          make it up is a storytelling card game where players scramble to invent the most convincing story for their very demanding boss.
+        </p>
+      </section>
+
+      <section class="make-it-up-section make-it-up-play reveal" aria-labelledby="make-it-up-play-title">
+        <div class="make-it-up-section-heading">
+          <h2 id="make-it-up-play-title">let's play!</h2>
+          <span aria-hidden="true"></span>
+        </div>
+        <p class="make-it-up-section-intro">hover, focus, or tap a card to flip it and peek at its prompt.</p>
+        <div class="make-it-up-deck">
+          <div class="playing-card-item">
+            <button class="playing-card" type="button" aria-pressed="false" aria-label="Event card. Activate to flip and reveal its prompt.">
+              <span class="playing-card__inner">
+                <span class="playing-card__face playing-card__back"><img src="assets/make-it-up/back 1.png" alt="" loading="lazy" decoding="async" /></span>
+                <span class="playing-card__face playing-card__front"><img src="assets/make-it-up/front 1.webp" alt="" loading="lazy" decoding="async" /></span>
+              </span>
+            </button>
+            <p class="playing-card-label">event</p>
+            <p class="playing-card-description">sets the story in motion.</p>
           </div>
-        </section>
-
-        <section class="case-section reveal">
-          <h2>the problem</h2>
-          <div class="case-section-copy">
-            <p class="case-pullquote">the further we stretched boundaries, the more the game slipped away from our grasp.</p>
-            <p>we experimented with cross-platform gaming and introduced mediums like audio and virtual reality. everything connected through a local server on our laptop, acting as a makeshift digital gamemaster.</p>
-            <p>so we scrapped it, all of it.</p>
+          <div class="playing-card-item">
+            <button class="playing-card" type="button" aria-pressed="false" aria-label="Subject card. Activate to flip and reveal its prompt.">
+              <span class="playing-card__inner">
+                <span class="playing-card__face playing-card__back"><img src="assets/make-it-up/back 2.png" alt="" loading="lazy" decoding="async" /></span>
+                <span class="playing-card__face playing-card__front"><img src="assets/make-it-up/front 2.png" alt="" loading="lazy" decoding="async" /></span>
+              </span>
+            </button>
+            <p class="playing-card-label">subject</p>
+            <p class="playing-card-description">who the story is about.</p>
           </div>
-        </section>
-
-        <section class="case-section reveal">
-          <h2>a new idea</h2>
-          <div class="case-section-copy">
-            <p class="case-pullquote">what if players could build any narrative at all?</p>
-            <p>make it up is a storytelling card game where players scramble to invent the most convincing story for their very demanding boss.</p>
+          <div class="playing-card-item">
+            <button class="playing-card" type="button" aria-pressed="false" aria-label="Wildcard card. Activate to flip and reveal its prompt.">
+              <span class="playing-card__inner">
+                <span class="playing-card__face playing-card__back"><img src="assets/make-it-up/back 3.webp" alt="" loading="lazy" decoding="async" /></span>
+                <span class="playing-card__face playing-card__front"><img src="assets/make-it-up/front 3.png" alt="" loading="lazy" decoding="async" /></span>
+              </span>
+            </button>
+            <p class="playing-card-label">wildcard</p>
+            <p class="playing-card-description">a twist to meddle with the plot.</p>
           </div>
-        </section>
-
-        <section class="case-section case-section--steps reveal">
-          <h2>how it works</h2>
-          <div class="case-section-copy case-inline-list">
-            <p><strong>build</strong>using event, subject, and setting cards, players slowly assemble the building blocks of a narrative.</p>
-            <p><strong>meddle</strong>wildcards let you sabotage, defend, or generally meddle with someone else's carefully curated plot.</p>
-            <p><strong>call</strong>when someone thinks their story is solid enough, they call the round and everyone narrates their version to the group. the rest of the table scores them on how entertaining, coherent, or impressively bullshit they are.</p>
+          <div class="playing-card-item">
+            <button class="playing-card" type="button" aria-pressed="false" aria-label="Setting card. Activate to flip and reveal its prompt.">
+              <span class="playing-card__inner">
+                <span class="playing-card__face playing-card__back"><img src="assets/make-it-up/back 4.png" alt="" loading="lazy" decoding="async" /></span>
+                <span class="playing-card__face playing-card__front"><img src="assets/make-it-up/front 4.png" alt="" loading="lazy" decoding="async" /></span>
+              </span>
+            </button>
+            <p class="playing-card-label">setting</p>
+            <p class="playing-card-description">where the action unfolds.</p>
           </div>
-        </section>
+        </div>
+        <div class="make-it-up-how-to-play">
+          <article>
+            <span aria-hidden="true">01</span>
+            <div><h3>build a story</h3><p>combine event, subject, and setting cards to give your excuse a beginning, a character, and a place.</p></div>
+          </article>
+          <article>
+            <span aria-hidden="true">02</span>
+            <div><h3>stir things up</h3><p>play wildcards to sabotage, defend, or meddle with someone else's carefully curated plot.</p></div>
+          </article>
+          <article>
+            <span aria-hidden="true">03</span>
+            <div><h3>sell it to the boss</h3><p>call the round, tell your story, and let the table score how entertaining, coherent, or impressively bullshit it is.</p></div>
+          </article>
+        </div>
+      </section>
 
-        <section class="case-section case-section--wide reveal">
-          <h2>around five playtests</h2>
-          <div class="case-section-copy">
-            <p class="case-pullquote">players ignored the points.</p>
-            <div class="case-comparison">
-              <div><span>we thought</span><p>the points were not enforced enough.</p></div>
-              <div><span>we found</span><p>many groups either ignored them or treated them casually. the storytelling itself was the dominant motivation. the points could simply exist as an optional structure for players who wanted them.</p></div>
-            </div>
-          </div>
-        </section>
+      <section class="make-it-up-section make-it-up-inside reveal" aria-labelledby="make-it-up-inside-title">
+        <div class="make-it-up-section-heading">
+          <h2 id="make-it-up-inside-title">what's inside!</h2>
+          <span aria-hidden="true"></span>
+        </div>
+        <div class="make-it-up-inside-layout">
+          <ul class="make-it-up-inside-list">
+            <li><span>01</span>playing cards</li>
+            <li><span>02</span>rulebook</li>
+            <li><span>03</span>notebook</li>
+            <li><span>04</span>3D-printed round counter</li>
+          </ul>
+          <figure class="make-it-up-image">
+            <img
+              src="assets/make-it-up/inside.jpg"
+              alt="The Make It Up box contents: playing cards, rulebook, notebook, and 3D-printed round counter."
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>the whole kit, ready for a round.</figcaption>
+          </figure>
+        </div>
+      </section>
 
-        <section class="case-section case-section--cards reveal">
-          <h2>design decisions</h2>
-          <div class="case-section-copy case-inline-list">
-            <p><strong>how do subjects feel like part of the story?</strong> subject cards feature eyes that stare directly at the player. subjects in a story are not passive objects. they carry presence and agency.</p>
-            <p><strong>how do wildcards read as defence?</strong> they use bommai or rakshasa face motifs, traditionally placed outside homes to ward off the evil eye. the wildcards perform a very similar function in the game.</p>
-            <p><strong>before</strong>i had imagined an elaborate system to track points and player stories.</p>
-            <p><strong>after</strong>a notepad system similar to the deduction notes used in cluedo. the simplicity strengthened the game.</p>
-          </div>
-        </section>
+      <section class="make-it-up-section make-it-up-decisions reveal" aria-labelledby="make-it-up-decisions-title">
+        <div class="make-it-up-section-heading">
+          <h2 id="make-it-up-decisions-title">design decisions</h2>
+          <span aria-hidden="true"></span>
+        </div>
+        <div class="make-it-up-decision-grid">
+          <article>
+            <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M3 16s4.7-8 13-8 13 8 13 8-4.7 8-13 8S3 16 3 16Z"/><circle cx="16" cy="16" r="3.5"/></svg>
+            <div><h3>motifs with a purpose</h3><p>subject cards look right at the player. wildcards use bommai motifs, traditionally meant to ward off the evil eye.</p></div>
+          </article>
+          <article>
+            <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><circle cx="16" cy="10" r="5"/><path d="M5 28c.8-6 4.5-9 11-9s10.2 3 11 9"/></svg>
+            <div><h3>keep it personal</h3><p>players are more invested when the variables in a story feel familiar to them.</p></div>
+          </article>
+          <article>
+            <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="12"/><path d="M4 16h24M16 4c4 4 6 8 6 12s-2 8-6 12c-4-4-6-8-6-12s2-8 6-12Z"/></svg>
+            <div><h3>go big or go home</h3><p>future versions could move the game to different cities, or even different universes.</p></div>
+          </article>
+          <article>
+            <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="4"/><circle cx="22" cy="12" r="3"/><path d="M3 27c.5-5 3.2-8 8-8s7.5 3 8 8m1-7c5-.5 8 2 9 6"/></svg>
+            <div><h3>high risk, high reward</h3><p>a round depends on group chemistry. instead of designing around that, we made room for it.</p></div>
+          </article>
+        </div>
+      </section>
 
-        <section class="case-section reveal">
-          <h2>what went wrong</h2>
-          <div class="case-section-copy"><p>we did not expect the biggest obstacle to be dpi and card alignment. even in the final execution the alignment is not completely perfect. it was a part of the process we underestimated and ultimately had to rush.</p></div>
-        </section>
+      <section class="make-it-up-section make-it-up-wrong reveal" aria-labelledby="make-it-up-wrong-title">
+        <div class="make-it-up-section-heading">
+          <h2 id="make-it-up-wrong-title">what went wrong</h2>
+          <span aria-hidden="true"></span>
+        </div>
+        <p>logistics! we did not expect the biggest obstacle to be dpi and card alignment. even in the final execution the alignment is not completely perfect. it was a part of the process we underestimated and ultimately had to rush.</p>
+      </section>
 
-        <section class="case-section reveal">
-          <h2>takeaways</h2>
-          <ul><li><strong>fun is not a shallow metric.</strong> a good game is defined by whether people actually enjoy playing it.</li><li><strong>design the room, not the plot.</strong> the real engine of the game is the group of players sitting around the table.</li></ul>
-        </section>
-        <p class="case-credits"><strong>thank you:</strong> yadhu, for the wonderful font.</p>
-        <a class="case-cta" href="rejection-robot.html">next case study <span aria-hidden="true">↗</span></a>
-      </main>
-      <footer class="site-footer"><a class="wordmark footer-mark" href="index.html"><img class="star-mark" src="assets/star.svg" alt="" /><span>kshiraja</span></a><p>made with curiosity, in bengaluru. <span>© <span data-year></span></span></p><a class="footer-email" href="mailto:hello@example.com">say hello <span aria-hidden="true">↗</span></a></footer>
-    </div>
-  </body>
+      <section class="make-it-up-section make-it-up-takeaways reveal" aria-labelledby="make-it-up-takeaways-title">
+        <div class="make-it-up-section-heading">
+          <h2 id="make-it-up-takeaways-title">takeaways</h2>
+          <span aria-hidden="true"></span>
+        </div>
+        <div class="make-it-up-takeaway-grid">
+          <article>
+            <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M16 3 19.5 11 28 12l-6.2 6 1.5 8.5L16 22l-7.3 4.5L10.2 18 4 12l8.5-1Z"/></svg>
+            <div><h3>fun is not a shallow metric</h3><p>a good game is defined by whether people actually enjoy playing it.</p></div>
+          </article>
+          <article>
+            <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M4 7h24v18H4zM10 7v18m12-18v18M4 13h24m-24 6h24"/></svg>
+            <div><h3>design the room, not the plot</h3><p>the real engine of the game is the group of players sitting around the table.</p></div>
+          </article>
+          <article>
+            <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M5 24 13 16l5 5L28 9M19 9h9v9"/></svg>
+            <div><h3>fail fast</h3><p>rigorous playtesting helped us find mistakes early. iterate and put it out there instead of optimizing in theory.</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="make-it-up-section make-it-up-thank-you reveal" aria-labelledby="make-it-up-thank-you-title">
+        <div class="make-it-up-section-heading">
+          <h2 id="make-it-up-thank-you-title">thank you!</h2>
+          <span aria-hidden="true"></span>
+        </div>
+        <p>shout out to my teammates, faculty (abhimanyu ghimiray), and play testers for making this happen!</p>
+      </section>
+      <a class="case-cta case-next-link" href="rejection-robot.html" aria-label="Next case study: Byebot">
+        <span class="case-next-link__label" aria-hidden="true">next case study</span>
+        <span class="case-next-link__arrow" aria-hidden="true">→</span>
+      </a>
+    </main>
+    <footer class="site-footer"><a class="wordmark footer-mark" href="index.html"><img class="star-mark"
+          src="assets/star.svg" alt="" /><span>kshiraja</span></a>
+      <p>made with curiosity, in bengaluru. <span>© <span data-year></span></span></p>
+    </footer>
+  </div>
+</body>
+
 </html>

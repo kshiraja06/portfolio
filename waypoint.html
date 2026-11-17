@@ -1,34 +1,334 @@
 <!doctype html>
 <html lang="en" data-theme="light">
-  <head>
-    <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Waypoint is a research agent that helps and never decides." /><meta name="theme-color" content="#faf8f3" />
-    <title>Waypoint | Kshiraja Ragothaman</title>
-    <script>const savedTheme=localStorage.getItem("kshiraja-theme");if(savedTheme==="light"||savedTheme==="dark")document.documentElement.dataset.theme=savedTheme;</script>
-    <link rel="icon" href="assets/star.svg" type="image/svg+xml" /><link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Cousine:wght@400;700&display=swap" rel="stylesheet" /><link rel="stylesheet" href="styles.css" /><script src="script.js" defer></script>
-  </head>
-  <body>
-    <div class="page-loader" role="status" aria-label="Loading portfolio"><img class="loader-star" src="assets/star.svg" alt="" /><span class="loader-name">kshiraja</span><span class="loader-track"><span></span></span></div><div class="night-sky" aria-hidden="true"></div><div class="custom-cursor" aria-hidden="true"></div><div class="scroll-progress" aria-hidden="true"></div>
-    <div class="page-shell">
-      <header class="site-header"><a class="wordmark" href="index.html" aria-label="Kshiraja, home"><img class="star-mark" src="assets/star.svg" alt="" /><span>kshiraja</span></a><p class="header-location">2006 <span>·</span> @ blr, india.</p><nav class="site-nav" aria-label="Main navigation"><a class="nav-link is-active" href="index.html">work</a><a class="nav-link" href="tinker.html">tinker</a><a class="nav-link" href="about.html">about</a><span class="nav-indicator" aria-hidden="true"></span></nav><button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false"><svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.1A8.3 8.3 0 0 1 8.9 3.8 8.6 8.6 0 1 0 20.2 15.1Z" /></svg><svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" /></svg></button></header>
-      <main class="case-study">
-        <header class="case-hero reveal"><a class="case-back-link" href="index.html#work"><span aria-hidden="true">←</span> all work</a><p class="eyebrow">digital design a3 · 2026</p><h1>waypoint</h1><p class="case-subtitle">a research agent that helps and never decides.</p><div class="case-hero-color case-hero--waypoint"><span>a quieter kind of research workspace</span><p>files your notes, connects you to people, and checks in on the brief.</p></div>
-          <dl class="case-meta-grid"><div><dt>role</dt><dd>concept, feature definition, UX, final prototype build</dd></div><div><dt>timeline</dt><dd>concept dates to confirm · final prototype: three-day sprint, october 2026</dd></div><div><dt>team</dt><dd>aditya, arnav, anvi, kshiraja</dd></div><div><dt>tools</dt><dd>to confirm</dd></div></dl>
-        </header>
-        <section class="case-outcomes reveal"><h2>what came out of it</h2><ul><li>cut ten features to three musts, and all three survived the remove-it test.</li><li>three user tests, each reflected in the final version.</li><li>a working preview with project setup, chats, typed notes, search, and a shared people list with a faculty directory.</li></ul></section>
-        <section class="case-section case-section--cards case-section--three reveal"><h2>context</h2><div class="case-section-copy"><p class="case-pullquote">design students drown in their own research.</p><p>as design students ourselves, we initially approached this problem by mapping every feature, touchpoint, and capability we wished we had during our own studio research workflows. i ideated and finalized the features and the idea, then built the final prototype myself.</p><div class="case-inline-list"><p><strong>aisha</strong>a visual communication / HCD student balancing chaotic studio research: “i don't want AI to write my project for me, i just need a tool that turns my research clutter into clear connections and lets me pick where to go next.”</p><p><strong>rohan</strong>an independent junior UX researcher without a senior lead steering the workflow.</p><p><strong>maya</strong>a design student who needs specialized human mentorship once online research stops helping.</p></div></div></section>
-        <section class="case-section reveal"><h2>the problem</h2><div class="case-section-copy"><p class="case-pullquote">existing tools are either passive or decisive.</p><p><strong>passive canvases:</strong> miro, figjam, and canva whiteboards hold raw research but do not help users synthesize it.</p><p><strong>decisive chatbots:</strong> chatgpt, claude, and perplexity can leapfrog the creative process by telling users what to think, and can generate plausible-sounding but unverified precedents or fake references.</p></div></section>
-        <section class="case-section case-section--feature reveal"><h2>the solution</h2><div class="case-section-copy"><p>waypoint is a quiet workspace that files your notes, connects you to people, and checks in on the brief. the final preview includes project setup, chats, typed notes, search, and a shared people list with a faculty directory.</p><a class="case-cta" href="https://waypoint-nu-seven.vercel.app/?preview=1" target="_blank" rel="noreferrer">open the prototype <span aria-hidden="true">↗</span></a></div></section>
-        <section class="case-section case-section--steps reveal"><h2>ten features became three</h2><div class="case-section-copy case-inline-list"><p><strong>v1</strong>it initially had ten features. managing them simultaneously created too much task friction and fragmented the user experience.</p><p><strong>v2</strong>we consolidated into a three-stage pipeline: compile, suggest, connect. four main features: notes, themes, discover, people.</p><p><strong>v3</strong>three musts. the information architecture changed with it.</p></div></section>
-        <section class="case-section case-section--cards case-section--three reveal"><h2>three user tests</h2><div class="case-section-copy"><p class="case-pullquote">tested on v2, reflected in v3.</p><div class="case-inline-list"><p><strong>two projects, one pile</strong>research in one flat workspace could not be separated by project. projects became the container, each with an overview and an editable research brief.</p><p><strong>blank canvas, no starting point</strong>a notes-first canvas gave no entry point. v3 starts from a familiar chat and sidebar layout, and passages are saved from chats into notes.</p><p><strong>evidence i could not tell apart</strong>“i have a note that people trust a person over an app. did i hear that, or assume it?” notes are typed as observation, assumption, question, care, or resource, and are filterable. search spans the workspace.</p></div></div></section>
-        <section class="case-section reveal"><h2>what we cut</h2><div class="case-section-copy"><p class="case-pullquote">the remove-it test: would the product still make sense without it?</p><div class="case-cut-grid"><article><strong>chat and notes</strong><p>no place for evidence. product loses its purpose.</p></article><article><strong>people</strong><p>no human bridge. the differentiator is gone.</p></article><article><strong>context check-in</strong><p>the agent drifts from the user's brief.</p></article><article><strong>themes</strong><p>manual sorting, workflow still usable. deferred to the next build.</p></article></div></div></section>
-        <section class="case-section reveal"><h2>what's still missing</h2><div class="case-section-copy"><p>qualitative comparison only. no quantitative results were collected. demo replies are scripted, and the themes page is under construction. validation remains proposed.</p></div></section>
-        <section class="case-section reveal"><h2>takeaways</h2><ul><li><strong>the agent helps and never decides.</strong> strategic control stays with the user.</li><li><strong>user tests reshaped an agent.</strong> i build, watch, then cut.</li></ul></section>
-        <p class="case-credits"><strong>thank you:</strong> aditya, arnav, anvi.</p>
-        <a class="case-cta" href="we-are-in-a-soup.html">next case study <span aria-hidden="true">↗</span></a>
-      </main>
-      <footer class="site-footer"><a class="wordmark footer-mark" href="index.html"><img class="star-mark" src="assets/star.svg" alt="" /><span>kshiraja</span></a><p>made with curiosity, in bengaluru. <span>© <span data-year></span></span></p><a class="footer-email" href="mailto:hello@example.com">say hello <span aria-hidden="true">↗</span></a></footer>
-    </div>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Waypoint is a research workspace that helps people work through their research without making decisions for them." />
+  <meta name="theme-color" content="#faf8f3" />
+  <title>waypoint — kshiraja</title>
+  <script>
+    const savedTheme = localStorage.getItem("kshiraja-theme");
+    if (savedTheme === "light" || savedTheme === "dark") document.documentElement.dataset.theme = savedTheme;
+  </script>
+  <link rel="icon" href="assets/star.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Cousine:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+
+  <style>
+    .case-study { padding-bottom: clamp(70px, 10vw, 120px); }
+    .case-hero { padding-block: clamp(54px, 8vw, 92px) 28px; }
+    .case-hero h1 { max-width:850px; margin:0 0 14px; font-size:clamp(52px,9.5vw,100px); letter-spacing:-.065em; line-height:.98; }
+    .case-deck { max-width:690px; margin:0; color:var(--blue); font-size:clamp(19px,3vw,26px); line-height:1.45; }
+    .case-meta { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:20px; padding:26px 0; border-top:0; border-bottom:1px solid var(--line); }
+    .case-meta dt,.micro-label { color: var(--muted); font: 9px var(--font-mono); letter-spacing: .07em; text-transform: uppercase; }
+    .case-meta dt { color:var(--blue); }
+    .case-meta dd { margin:0; color:var(--ink-soft); font-size:14px; line-height:1.65; }
+    .case-section { position:relative; display:block; padding-block:clamp(42px,6vw,66px); border-top:0; border-bottom:1px solid var(--line); scroll-margin-top:25px; }
+    .case-section::before { display: none; content: none; }
+    .case-section-head { display:grid; grid-template-columns:minmax(150px,.7fr) minmax(0,1.3fr); gap:clamp(25px,5.5vw,70px); margin-bottom:30px; }
+    .case-section-head h2 { grid-column: auto; grid-row: auto; align-self: auto; padding-top: 0; }
+    .case-section-head h2 { max-width:620px; margin:0; font-size:clamp(24px,3.5vw,34px); letter-spacing:-.04em; line-height:1.15; }
+    .case-section-head p:not(.micro-label) { grid-column:auto; grid-row:auto; max-width:460px; margin:12px 0 0; color:var(--ink-soft); font-size:15px; line-height:1.8; }
+    .case-copy { max-width:710px; margin-left:auto; color:var(--ink-soft); font-size:15px; line-height:1.8; }
+    .case-copy p { margin-bottom: 15px; }
+    .case-copy strong { color: var(--ink); font-weight: 400; }
+    .feature-chips { display:flex; flex-wrap:wrap; gap:7px; }
+    .feature-chips span { padding:6px 10px; border-radius:99px; background:var(--surface-soft); color:var(--ink-soft); font:9px var(--font-mono); }
+    .doodle { overflow:visible; fill:none; stroke:currentColor; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round; }
+    .split-observation { display:grid; grid-template-columns:minmax(0,1fr) auto minmax(0,1fr); gap:16px; }
+    .observation-card { min-height:210px; padding:24px; border-radius:0; background:var(--surface); border:1px solid var(--line); }
+    .observation-card:nth-child(2) { background:var(--surface-soft); }
+    .observation-card h3 { margin:24px 0 8px; font-size:clamp(23px,3vw,32px); letter-spacing:-.035em; }
+    .observation-card p { max-width:420px; margin:0; color:var(--ink-soft); font-size:13px; }
+    .versus { display:flex; align-items:center; justify-content:center; color:var(--muted); font:10px var(--font-mono); }
+    .iteration-strip { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; align-items:stretch; }
+    .iteration { position:relative; padding:19px; border:1px solid var(--line); border-radius:0; background:var(--surface); }
+    .iteration:nth-child(2) { background:var(--surface-soft); }
+    .iteration:nth-child(3) { background:var(--blue-soft); }
+    .iteration-number { color:var(--muted); font:9px var(--font-mono); }
+    .iteration h3 { margin:23px 0 9px; font-size:clamp(23px,3vw,34px); }
+    .iteration p { margin:0; color:var(--ink-soft); font-size:12px; }
+    .iteration-arrow { position:absolute; top:18px; right:18px; color:var(--olive); }
+    .feature-chips { margin-top:17px; }
+    .feature-chips span { border:1px solid var(--line); background:transparent; }
+    .test-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; }
+    .test-card { padding:20px; border:1px solid var(--line); border-radius:0; background:var(--surface); }
+    .test-card-head { display:flex; align-items:center; justify-content:space-between; gap:10px; padding-bottom:12px; border-bottom:1px solid var(--line); }
+    .test-person { color:var(--muted); font:9px var(--font-mono); }
+    .test-quote { margin:18px 0; color:var(--ink); font-size:clamp(16px,1.6vw,19px); line-height:1.5; }
+    .test-response { display:grid; gap:13px; padding-top:14px; border-top:1px solid var(--line); }
+    .test-response div { display:grid; grid-template-columns:94px minmax(0,1fr); gap:12px; align-items:start; }
+    .test-response .micro-label { padding-top:3px; color:var(--olive); }
+    .test-response p { margin:0; color:var(--ink-soft); font-size:13px; line-height:1.6; }
+    .test-summary { margin:20px 0 0; color:var(--muted); font:10px var(--font-mono); }
+    .comparison-wrap { overflow-x:auto; border:1px solid var(--line); border-radius:0; background:var(--surface); }
+    .comparison-table,.priority-table { width:100%; border-collapse:collapse; font-size:12px; }
+    .comparison-table th,.comparison-table td,.priority-table th,.priority-table td { padding:15px 17px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; }
+    .comparison-table th,.priority-table th { color:var(--muted); font:9px var(--font-mono); letter-spacing:.04em; text-transform:uppercase; }
+    .comparison-table tr:last-child td,.priority-table tr:last-child td { border-bottom:0; }
+    .comparison-table td:first-child { width:22%; color:var(--ink); }
+    .comparison-table td { color:var(--ink-soft); }
+    .comparison-table .v3 { background:var(--blue-soft); color:var(--ink); }
+    .priority-table td:first-child { width:18%; font:10px var(--font-mono); text-transform:uppercase; }
+    .priority-table td { color:var(--ink-soft); }
+    .priority-table tr:nth-child(1) td:first-child { color:var(--olive); }
+    .priority-table tr:nth-child(2) td:first-child { color:#9a789f; }
+    .priority-table tr:nth-child(3) td:first-child { color:#a17d70; }
+    .remove-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
+    .remove-item { display:grid; grid-template-columns:120px 1fr; gap:15px; padding:15px 0; border-bottom:1px solid var(--line); }
+    .remove-item strong { font-size:13px; font-weight:400; }
+    .remove-item span { color:var(--ink-soft); font-size:11px; }
+    .case-video-figure { margin:30px 0 0; }
+    .case-video-figure video { display:block; width:100%; height:auto; border:1px solid var(--line); border-radius:4px; background:#18161b; }
+    .waypoint-hero-video { max-height:clamp(240px,45vw,540px); object-fit:cover; }
+    .case-video-figure figcaption,.map-caption { display:flex; justify-content:space-between; gap:15px; margin-top:11px; color:var(--muted); font:9px var(--font-mono); }
+    .map-caption { margin-top:11px; }
+    .final-feature-section .case-section-head { margin-bottom:22px; }
+    .final-feature-section .case-video-figure { margin-top:0; }
+    .final-feature-section .case-video-figure video { width:100%; }
+    .limitation-note { max-width:760px; margin-left:auto; padding:22px 24px; border-left:2px solid var(--lilac); background:var(--surface); color:var(--ink-soft); font-size:13px; }
+    .takeaway { max-width:none; margin:0; font-size:16px; line-height:1.8; }
+    .case-study--editorial .case-looking-back .case-copy { max-width:760px; }
+    .case-cta { display:inline-flex; align-items:center; gap:10px; padding:11px 16px; border:1px solid var(--line); border-radius:99px; font:10px var(--font-mono); text-decoration:none; transition:background var(--duration-fast) ease,transform var(--duration-fast) ease; }
+    .case-cta:hover { background:var(--surface); transform:translateY(-2px); }
+    .reveal { animation:case-rise .7s var(--ease-out) both; }
+    @keyframes case-rise { from { opacity:0; transform:translateY(13px); } to { opacity:1; transform:translateY(0); } }
+    @media(max-width:760px) {
+      .case-meta { grid-template-columns:repeat(2,minmax(0,1fr)); }
+      .case-section-head { grid-template-columns:1fr; gap:12px; }
+      .test-grid { grid-template-columns:1fr; gap:15px; }
+      .test-card:nth-child(2),.test-card:nth-child(3),.iteration:nth-child(2) { transform:none; }
+      .iteration-strip { grid-template-columns:1fr; }
+      .remove-grid { grid-template-columns:1fr; }
+      .remove-item { grid-template-columns:105px 1fr; }
+    }
+    @media(max-width:540px) {
+      .split-observation { grid-template-columns:1fr; }
+      .versus { min-height:20px; }
+      .comparison-table th,.comparison-table td,.priority-table th,.priority-table td { padding:11px; }
+      .prototype-caption,.map-caption { flex-direction:column; gap:5px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-loader" role="status" aria-label="Loading portfolio">
+    <img class="loader-star" src="assets/star.svg" alt="" />
+    <span class="loader-name">kshiraja</span>
+    <span class="loader-track"><span></span></span>
+  </div>
+  <div class="night-sky" aria-hidden="true"></div>
+  <div class="custom-cursor" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="wordmark" href="index.html" aria-label="Kshiraja, home"><img class="star-mark" src="assets/star.svg" alt="" /><span>kshiraja</span></a>
+      <p class="header-location">2006 <span>·</span> @ blr, india.</p>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a class="nav-link is-active" href="index.html">work</a>
+        <a class="nav-link" href="tinker.html">tinker</a>
+        <a class="nav-link" href="about.html">about</a>
+        <span class="nav-indicator" aria-hidden="true"></span>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+        <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.1A8.3 8.3 0 0 1 8.9 3.8 8.6 8.6 0 1 0 20.2 15.1Z" /></svg>
+        <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" /></svg>
+      </button>
+    </header>
+
+    <main class="case-study case-study--editorial">
+      <header class="case-hero reveal">
+        <a class="case-back-link" href="index.html#work"><span aria-hidden="true">←</span> all work</a>
+        <p class="eyebrow">research workspace</p>
+        <h1>waypoint<span style="color:var(--lilac)">.</span></h1>
+        <p class="case-deck">a research workspace for people who have collected a lot of information and still need to figure out what to do with it.</p>
+        <figure class="case-video-figure">
+          <video class="waypoint-hero-video" autoplay muted loop playsinline preload="auto" aria-label="A short preview of the Waypoint research workspace">
+            <source src="assets/waypoint/hero.mp4" type="video/mp4" />
+            Your browser does not support embedded video.
+          </video>
+          <figcaption class="map-caption"><span>WAYPOINT / PRODUCT PREVIEW</span><span>01 / 01</span></figcaption>
+        </figure>
+        <dl class="case-meta">
+          <div><dt>role</dt><dd>concept, feature definition<br />UX design, prototype build</dd></div>
+          <div><dt>timeline</dt><dd>october 2026<br />3-day sprint</dd></div>
+          <div><dt>team</dt><dd>4 designers</dd></div>
+          <div><dt>tools</dt><dd>figma<br />copilot / claude</dd></div>
+        </dl>
+      </header>
+
+      <section class="case-section reveal">
+        <div class="case-section-head"><p class="micro-label">context</p><div><h2>research gets scattered before it gets useful.</h2><p>the more material a project gathers, the harder it becomes to keep track of what it says, where it came from and why it mattered in the first place.</p></div></div>
+        <div class="case-copy">
+          <p>we looked at how design students and UX researchers move between articles, interview notes, screenshots, shared boards and AI conversations. each tool handles one part of the process, but the researcher has to hold the whole thing together.</p>
+          <p>we kept coming back to a gap between tools that store information and tools that interpret it. a whiteboard gives you room to collect, but leaves the synthesis to you. a chatbot can move quickly, but can also move past the evidence and make decisions feel more settled than they are.</p>
+        </div>
+        <div class="split-observation">
+          <article class="observation-card"><span class="micro-label">the passive end</span><h3>everything goes in.</h3><p>miro, figjam and similar canvases hold raw material well. they don't necessarily help you work out what connects or what deserves another look.</p></article>
+          <div class="versus">— the gap —</div>
+          <article class="observation-card"><span class="micro-label">the active end</span><h3>the answer comes out.</h3><p>general LLMs can suggest directions, but references and context get buried in long chats. confident-sounding output still needs checking.</p></article>
+        </div>
+      </section>
+
+      <section class="case-section reveal">
+        <div class="case-section-head"><p class="micro-label">first exploration</p><div><h2>the first version tried to do everything.</h2><p>we began by mapping the full ecosystem of things a researcher might need. it was useful as a landscape of possibilities, but it was too much product to make sense of at once.</p></div></div>
+        <div class="iteration-strip">
+          <article class="iteration"><span class="iteration-number">VERSION 01</span><span class="iteration-arrow">↗</span><h3>10 features</h3><p>one broad workspace for collecting, synthesising, discovering and connecting research.</p><div class="feature-chips"><span>overview</span><span>inbox</span><span>timeline</span><span>branches</span><span>people</span><span>methods</span><span>agent</span><span>and more</span></div></article>
+          <article class="iteration"><span class="iteration-number">VERSION 02</span><span class="iteration-arrow">↗</span><h3>4 areas</h3><p>we grouped the idea into a three-stage workflow and gave the main capabilities clearer destinations.</p><div class="feature-chips"><span>notes</span><span>themes</span><span>discover</span><span>people</span></div></article>
+          <article class="iteration"><span class="iteration-number">VERSION 03</span><span class="iteration-arrow">↗</span><h3>3 musts</h3><p>the final direction centred on the parts that held the research together and kept the user in control.</p><div class="feature-chips"><span>chat + notes</span><span>people</span><span>project brief</span></div></article>
+        </div>
+        <div class="case-copy"><p>the first version had ten features competing for attention. managing them simultaneously created task friction and fragmented the experience. we narrowed the workflow to <strong>compile, suggest and connect</strong>: keep the material together, help the researcher explore it, then make it easier to reach the right people or resources.</p></div>
+        <figure class="case-video-figure">
+          <video controls playsinline preload="metadata" poster="assets/waypoint/version-1-poster.jpg" aria-label="Waypoint version one prototype walkthrough">
+            <source src="assets/waypoint/version-1.mp4" type="video/mp4" />
+            Your browser does not support embedded video.
+          </video>
+          <figcaption class="map-caption"><span>VERSION 01 / FIRST EXPLORATION</span><span>00:21</span></figcaption>
+        </figure>
+      </section>
+
+      <section class="case-section reveal">
+        <div class="case-section-head"><p class="micro-label">user testing · v2</p><div><h2>three testers showed us where the notes-first flow broke down.</h2><p>we watched how people tried to separate projects, get started and make sense of their notes. each point of friction led to a clear change in v3.</p></div></div>
+        <div class="test-grid">
+          <article class="test-card">
+            <div class="test-card-head"><span class="test-person">01 / KEEP PROJECTS APART</span><span class="micro-label">v2 → v3</span></div>
+            <blockquote class="test-quote">“everything was in one big pile of notes.”</blockquote>
+            <div class="test-response">
+              <div><span class="micro-label">what we learned</span><p>research from different projects needed a clear boundary.</p></div>
+              <div><span class="micro-label">what changed</span><p>each project now has its own overview and research brief.</p></div>
+            </div>
+          </article>
+          <article class="test-card">
+            <div class="test-card-head"><span class="test-person">02 / KNOW HOW TO BEGIN</span><span class="micro-label">v2 → v3</span></div>
+            <blockquote class="test-quote">“I stared at the canvas. I did not know what to type.”</blockquote>
+            <div class="test-response">
+              <div><span class="micro-label">what we learned</span><p>a blank canvas gave people no clear first step.</p></div>
+              <div><span class="micro-label">what changed</span><p>chat became the starting point; useful passages can be saved as notes.</p></div>
+            </div>
+          </article>
+          <article class="test-card">
+            <div class="test-card-head"><span class="test-person">03 / TRUST AND RETRIEVE NOTES</span><span class="micro-label">v2 → v3</span></div>
+            <blockquote class="test-quote">“I have a note that people trust a person over an app. Did I hear that, or assume it?”</blockquote>
+            <div class="test-response">
+              <div><span class="micro-label">what we learned</span><p>people needed to know what a note represented and find it again.</p></div>
+              <div><span class="micro-label">what changed</span><p>notes became typed and filterable, with search across the workspace.</p></div>
+            </div>
+          </article>
+        </div>
+        <p class="test-summary">3 QUALITATIVE TESTS · FRICTION → DESIGN CHANGE</p>
+        <figure class="case-video-figure">
+          <video controls playsinline preload="metadata" poster="assets/waypoint/version-2-poster.jpg" aria-label="Waypoint version two notes-first prototype walkthrough">
+            <source src="assets/waypoint/version-2.mp4" type="video/mp4" />
+            Your browser does not support embedded video.
+          </video>
+          <figcaption class="map-caption"><span>VERSION 02 / NOTES-FIRST WORKSPACE</span><span>00:30</span></figcaption>
+        </figure>
+      </section>
+
+      <section class="case-section reveal">
+        <div class="case-section-head"><p class="micro-label">the structural change</p><div><h2>the project became the starting point.</h2><p>v3 wasn't just a cleaner version of v2. the information architecture changed to reflect what people needed to keep together and what they needed to access from anywhere.</p></div></div>
+        <div class="comparison-wrap"><table class="comparison-table"><thead><tr><th>same task</th><th>v2 / notes canvas</th><th class="v3">v3 / project + chat</th></tr></thead><tbody>
+          <tr><td>starting point</td><td>blank notes canvas</td><td class="v3">familiar chat with sidebar</td></tr>
+          <tr><td>where research lives</td><td>one flat workspace</td><td class="v3">inside a project with its own brief</td></tr>
+          <tr><td>telling evidence apart</td><td>untyped notes</td><td class="v3">typed, filterable notes</td></tr>
+          <tr><td>finding it again</td><td>remember where it was saved</td><td class="v3">search across the workspace</td></tr>
+          <tr><td>finding experts</td><td>part of Discover</td><td class="v3">shared people list and faculty directory</td></tr>
+        </tbody></table></div>
+        <p class="micro-label">qualitative comparison · same tasks considered across both versions · no quantitative results collected</p>
+      </section>
+
+      <section class="case-section reveal">
+        <div class="case-section-head"><p class="micro-label">prioritisation</p><div><h2>we had to decide what the product couldn't lose.</h2><p>we used a Must / Should / Could exercise to separate the core workflow from features that could wait. the question wasn't which ideas sounded interesting. it was which ones the product depended on.</p></div></div>
+        <div class="comparison-wrap"><table class="priority-table"><thead><tr><th>priority</th><th>features</th><th>why</th></tr></thead><tbody>
+          <tr><td>must</td><td>chat workspace with organised notes<br />people and faculty connection<br />project brief and context check-in</td><td>keeps evidence in a project, creates a human bridge and gives the agent a frame to work within.</td></tr>
+          <tr><td>should</td><td>themes<br />discover<br />search<br />challenges</td><td>valuable extensions, but they need reliable synthesis and source retrieval to work properly.</td></tr>
+          <tr><td>could</td><td>overview dashboard<br />timeline and branches<br />methods guide<br />agent controls and history</td><td>useful additions, but not necessary to prove the main workflow.</td></tr>
+        </tbody></table></div>
+        <h3 class="case-subsection-title">the remove-it test</h3>
+        <div class="remove-grid">
+          <div class="remove-item"><strong>chat + notes</strong><span>without a place for evidence, the product loses its purpose.</span></div>
+          <div class="remove-item"><strong>people</strong><span>without the human bridge, its point of difference disappears.</span></div>
+          <div class="remove-item"><strong>context check-in</strong><span>without the brief, the agent can drift away from the researcher's question.</span></div>
+          <div class="remove-item"><strong>themes</strong><span>manual sorting is still possible, so this can wait for a later build.</span></div>
+        </div>
+      </section>
+
+      <section class="case-section reveal">
+        <div class="case-section-head"><p class="micro-label">final prototype</p><div><h2>a place to work through the research, not just store it.</h2><p>the final prototype brings the core workflow into one project-based workspace. these walkthroughs focus on the four features that hold it together.</p></div></div>
+      </section>
+
+      <section class="case-section reveal final-feature-section">
+        <div class="case-section-head"><p class="micro-label">01 / projects</p><div><h2>give each project its own context.</h2><p>projects keep research separate, with a brief for the question, scope and audience.</p></div></div>
+        <figure class="case-video-figure">
+          <video controls playsinline preload="metadata" poster="assets/waypoint/final-projects-poster.jpg" aria-label="Waypoint final prototype walkthrough: projects and project context">
+            <source src="assets/waypoint/final-projects.mp4" type="video/mp4" />
+            Your browser does not support embedded video.
+          </video>
+          <figcaption class="map-caption"><span>FINAL PROTOTYPE / PROJECTS</span><span>00:00–00:48</span></figcaption>
+        </figure>
+      </section>
+
+      <section class="case-section reveal final-feature-section">
+        <div class="case-section-head"><p class="micro-label">02 / chat</p><div><h2>start with a conversation.</h2><p>chat gives the researcher a familiar place to think out loud while the project keeps its context close.</p></div></div>
+        <figure class="case-video-figure">
+          <video controls playsinline preload="metadata" poster="assets/waypoint/final-chat-poster.jpg" aria-label="Waypoint final prototype walkthrough: project chat">
+            <source src="assets/waypoint/final-chat.mp4" type="video/mp4" />
+            Your browser does not support embedded video.
+          </video>
+          <figcaption class="map-caption"><span>FINAL PROTOTYPE / PROJECT CHAT</span><span>00:48–01:40</span></figcaption>
+        </figure>
+      </section>
+
+      <section class="case-section reveal final-feature-section">
+        <div class="case-section-head"><p class="micro-label">03 / notes</p><div><h2>turn useful moments into notes.</h2><p>typed notes help distinguish kinds of evidence, then filter it down when the researcher needs it again.</p></div></div>
+        <figure class="case-video-figure">
+          <video controls playsinline preload="metadata" poster="assets/waypoint/final-notes-poster.jpg" aria-label="Waypoint final prototype walkthrough: typed notes and filters">
+            <source src="assets/waypoint/final-notes.mp4" type="video/mp4" />
+            Your browser does not support embedded video.
+          </video>
+          <figcaption class="map-caption"><span>FINAL PROTOTYPE / TYPED NOTES</span><span>01:40–02:51</span></figcaption>
+        </figure>
+      </section>
+
+      <section class="case-section reveal final-feature-section">
+        <div class="case-section-head"><p class="micro-label">04 / search</p><div><h2>find your way back across the workspace.</h2><p>workspace search brings projects, chats, notes and people into one place to look again.</p></div></div>
+        <figure class="case-video-figure">
+          <video controls playsinline preload="metadata" poster="assets/waypoint/final-search-poster.jpg" aria-label="Waypoint final prototype walkthrough: workspace search">
+            <source src="assets/waypoint/final-search.mp4" type="video/mp4" />
+            Your browser does not support embedded video.
+          </video>
+          <figcaption class="map-caption"><span>FINAL PROTOTYPE / WORKSPACE SEARCH</span><span>02:51–03:18</span></figcaption>
+        </figure>
+        <p><a class="case-cta" href="https://waypoint-nu-seven.vercel.app/?preview=1" target="_blank" rel="noreferrer">open the prototype <span aria-hidden="true">↗</span></a></p>
+      </section>
+
+      <section class="case-section reveal">
+        <div class="case-section-head"><p class="micro-label">limitations</p><div><h2>the interface is further along than the agent.</h2><p>the prototype demonstrates the structure and core interactions, but it doesn't yet validate the full product idea.</p></div></div>
+        <div class="limitation-note">Project setup, chats, saving notes, note filters, workspace search and the people directory are represented in the current preview. Agent replies are scripted, automated synthesis is not implemented, and the Themes page is under construction. We collected qualitative feedback from three tests, not quantitative usability results. The next step is to test the core tasks with first-time users and build the agent capabilities against reliable sources.</div>
+      </section>
+
+      <section class="case-section reveal case-looking-back">
+        <div class="case-section-head"><p class="micro-label">looking back</p><div><h2>making the product smaller made the workflow clearer.</h2></div></div>
+        <div class="case-copy">
+          <p>the most useful changes came from noticing small moments of friction: not knowing where a note belonged, not knowing how to begin, or not being able to tell an observation from an assumption.</p>
+          <p>the agent should help someone work through their research, not decide what the research means. keeping that distinction clear shaped what we kept, what we changed and what we left for later.</p>
+        </div>
+      </section>
+
+      <p class="case-credits"><strong>thank you:</strong> aditya, arnav and anvi.</p>
+      <a class="case-cta case-next-link" href="we-are-in-a-soup.html" aria-label="Next case study: We Are in a Soup">
+        <span class="case-next-link__label" aria-hidden="true">next case study</span>
+        <span class="case-next-link__arrow" aria-hidden="true">→</span>
+      </a>
+    </main>
+
+    <footer class="site-footer">
+      <a class="wordmark footer-mark" href="index.html"><img class="star-mark" src="assets/star.svg" alt="" /><span>kshiraja</span></a>
+      <p>made with curiosity, in bengaluru. <span>© <span data-year></span></span></p>
+    </footer>
+  </div>
+</body>
 </html>
