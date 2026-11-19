@@ -11,6 +11,7 @@ const prefersReducedMotion = window.matchMedia(
 const isHomePage =
   window.location.pathname === "/" ||
   window.location.pathname.endsWith("/index.html");
+const lightModeOnAtLoad = root.dataset.theme === "light";
 const introSeenKey = "kshiraja-space-intro-seen";
 if (
   introGate &&
@@ -77,6 +78,7 @@ themeToggle.setAttribute(
 );
 
 themeToggle.addEventListener("click", () => {
+  themeToggle.classList.remove("is-theme-hint");
   const theme = root.dataset.theme === "dark" ? "light" : "dark";
   root.dataset.theme = theme;
   themeToggle.setAttribute("aria-pressed", String(theme === "dark"));
@@ -86,6 +88,25 @@ themeToggle.addEventListener("click", () => {
   );
   localStorage.setItem("kshiraja-theme", theme);
 });
+
+const showThemeHint = () => {
+  if (root.dataset.theme !== "light") return;
+  themeToggle.classList.add("is-theme-hint");
+  window.setTimeout(() => {
+    themeToggle.classList.remove("is-theme-hint");
+  }, 1600);
+};
+
+if (isHomePage && lightModeOnAtLoad && !prefersReducedMotion) {
+  window.setTimeout(() => {
+    if (root.dataset.theme !== "light") return;
+    if (introGate && introGate.open) {
+      introGate.addEventListener("close", showThemeHint, { once: true });
+      return;
+    }
+    showThemeHint();
+  }, 3000);
+}
 
 const introStarfield = document.querySelector(".space-starfield");
 if (introStarfield) {
@@ -374,46 +395,6 @@ if ("IntersectionObserver" in window && aboutLinks.length > 0) {
   aboutSections.forEach((section) => aboutObserver.observe(section));
 }
 
-const aboutTabs = [...document.querySelectorAll("[data-about-tab]")];
-const aboutTabPanel = document.querySelector("#about-tab-panel");
-if (aboutTabs.length > 0 && aboutTabPanel) {
-  const aboutTabTitle = aboutTabPanel.querySelector("h3");
-  const aboutTabDescription = aboutTabPanel.querySelector("p");
-  const aboutTabArtwork = [...aboutTabPanel.querySelectorAll("[data-tab-art]")];
-  const activateAboutTab = (tab) => {
-    aboutTabs.forEach((aboutTab) => {
-      const selected = aboutTab === tab;
-      aboutTab.classList.toggle("is-selected", selected);
-      aboutTab.setAttribute("aria-selected", String(selected));
-      aboutTab.tabIndex = selected ? 0 : -1;
-    });
-    aboutTabPanel.setAttribute("aria-labelledby", tab.id);
-    if (aboutTabTitle) aboutTabTitle.textContent = tab.dataset.panelTitle || "";
-    if (aboutTabDescription) {
-      aboutTabDescription.textContent = tab.dataset.panelDescription || "";
-    }
-    aboutTabArtwork.forEach((art) => {
-      art.toggleAttribute("hidden", art.dataset.tabArt !== tab.dataset.panelArt);
-    });
-  };
-  aboutTabs.forEach((tab, index) => {
-    tab.addEventListener("click", () => activateAboutTab(tab));
-    tab.addEventListener("keydown", (event) => {
-      let nextIndex;
-      if (event.key === "ArrowRight") nextIndex = (index + 1) % aboutTabs.length;
-      if (event.key === "ArrowLeft") {
-        nextIndex = (index - 1 + aboutTabs.length) % aboutTabs.length;
-      }
-      if (event.key === "Home") nextIndex = 0;
-      if (event.key === "End") nextIndex = aboutTabs.length - 1;
-      if (nextIndex === undefined) return;
-      event.preventDefault();
-      aboutTabs[nextIndex].focus();
-      activateAboutTab(aboutTabs[nextIndex]);
-    });
-  });
-}
-
 const tinkerCards = [...document.querySelectorAll(".tinker-card")];
 if (tinkerCards.length > 0) {
   const tinkerGallery = document.querySelector(".tinker-gallery");
@@ -646,10 +627,7 @@ if (cursors.length > 0 && window.matchMedia("(pointer: fine)").matches) {
         target instanceof Element && Boolean(target.closest(".tinker-card[data-gallery]")),
       );
     });
-    if (
-      tinkerCursorPop &&
-      (!(target instanceof Element) || !target.closest(".tinker-card"))
-    ) {
+    if (tinkerCursorPop && (!(target instanceof Element) || !target.closest(".tinker-card"))) {
       tinkerCursorPop.classList.remove("is-visible");
     }
   });
